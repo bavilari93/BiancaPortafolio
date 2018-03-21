@@ -28,6 +28,7 @@ html {
 }
 
 
+
 /*link style*/
 
 .top-nav a {
@@ -39,6 +40,7 @@ html {
     text-decoration: none;
     font-size: 1.4rem;
 }
+
 
 
 /*text color when hover*/
@@ -111,13 +113,15 @@ div.right h1 {
 
 div.left {
     width: 60%;
-    height: 46rem;
+    padding-bottom: 2rem;
+    /*    height: 50rem;*/
     background-color: black;
     float: left;
     color: white;
 }
 
-.left p {
+.left p,
+h1 {
     width: 80%;
     margin-top: 4rem;
     margin-left: 10px;
@@ -127,18 +131,53 @@ div.left {
     margin-bottom: 0px;
     letter-spacing: .1rem;
 }
-div.container.brief{
-width: 80%;
-height: 100px;
-margin-left: 10px;
-margin-top: 2rem;
-flex-direction: row;
-}
-.skill{
-    color: white;
-    font-variant: small-caps;
 
+.left p {
+    margin-left: 20px;
 }
+
+.left h1 {
+    width: 90%;
+    margin-top: 0px;
+}
+
+div.container.brief {
+    width: 80%;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 2rem;
+    flex-direction: row;
+}
+
+.skill {
+    font-variant: small-caps;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.skill div:nth-child(even) {
+    background-color: black;
+    text-align: center;
+}
+
+div.sub-skill {
+    background-color: Maroon;
+    align-items: center;
+    width: 40%;
+    height: 100px;
+    color: white;
+    margin-top: 10px;
+}
+
+.sub-skill ul {
+    list-style: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 
 /*disappear ipad / iphone content for desktop desing */
@@ -165,12 +204,19 @@ flex-direction: row;
         display: block;
         text-align: left;
     }
+    .left p {
+        width: 90%;
+    }
+    .skill div:nth-child(odd) {
+        font-size: .8rem;
+    }
 }
+
 @media only screen and (min-device-pixel-ratio: 1.5)(-o-min-device-pixel-ratio: 3/2),
-    (-webkit-min-device-pixel-ratio: 1.5),
-    (min-device-pixel-ratio: 1.5)  {
-  .brief img{
-    width: 40px;
-    margin-left: 1rem;
-}
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-device-pixel-ratio: 1.5) {
+    .brief img {
+        width: 40px;
+        margin-left: 1rem;
+    }
 }
