@@ -1,0 +1,176 @@
+/*style of top nav */
+
+html {
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-nav {
+    background-color: black;
+    overflow: hidden;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+
+/*link style*/
+
+.top-nav a {
+    float: left;
+    display: block;
+    color: #FBFFFE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+
+/*text color when hover*/
+
+.top-nav a:hover {
+    background-color: #576872;
+    color: #EDEFF2;
+}
+
+.top-nav .icon {
+    display: none;
+}
+
+.main {
+    height: 46rem;
+    flex-direction: column;
+    background-color: white;
+}
+
+.main h2 {
+    border-bottom: solid Silver .1rem;
+    font-variant: small-caps;
+    margin-bottom: 0px;
+    letter-spacing: .2rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+.main h1 {
+    font-variant: small-caps;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-top: .3rem;
+    color: Maroon;
+}
+
+.main button {
+    height: 50px;
+    background: none;
+    color: Grey;
+    font-variant: small-caps;
+    font-weight: 400;
+    margin-bottom: 0px;
+    letter-spacing: .2rem;
+    border: solid LightGrey .3rem;
+}
+
+div .container.skills {
+    flex-direction: row;
+}
+
+div.right {
+    width: 40%;
+    height: 46rem;
+    color: WhiteSmoke;
+    background-color: black;
+}
+
+div.right h1 {
+    width: 50%;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-variant: small-caps;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0px;
+    letter-spacing: .2rem;
+    border-bottom: solid LightGrey .1rem;
+}
+
+div.left {
+    width: 60%;
+    height: 46rem;
+    background-color: black;
+    float: left;
+    color: white;
+}
+
+.left p {
+    width: 80%;
+    margin-top: 4rem;
+    margin-left: 10px;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: 200;
+    margin-bottom: 0px;
+    letter-spacing: .1rem;
+}
+div.container.brief{
+width: 80%;
+height: 100px;
+margin-left: 10px;
+margin-top: 2rem;
+flex-direction: row;
+}
+.skill{
+    color: white;
+    font-variant: small-caps;
+
+}
+
+
+/*disappear ipad / iphone content for desktop desing */
+
+@media screen and (max-width: 768px) {
+    .top-nav a:not(:first-child) {
+        display: none;
+    }
+    .top-nav a.icon {
+        float: right;
+        display: block;
+    }
+    .top-nav.responsive {
+        margin-bottom: -20px;
+        position: relative;
+    }
+    .top-nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .top-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+@media only screen and (min-device-pixel-ratio: 1.5)(-o-min-device-pixel-ratio: 3/2),
+    (-webkit-min-device-pixel-ratio: 1.5),
+    (min-device-pixel-ratio: 1.5)  {
+  .brief img{
+    width: 40px;
+    margin-left: 1rem;
+}
+}
