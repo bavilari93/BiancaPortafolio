@@ -1,5 +1,10 @@
 /*style of top nav */
 
+* body {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 14px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -29,6 +34,10 @@ html {
 
 
 
+
+
+
+
 /*link style*/
 
 .top-nav a {
@@ -40,6 +49,10 @@ html {
     text-decoration: none;
     font-size: 1.4rem;
 }
+
+
+
+
 
 
 
@@ -90,11 +103,13 @@ html {
 
 div .container.skills {
     flex-direction: row;
+    align-items: baseline;
+    overflow: hidden;
 }
 
 div.right {
     width: 40%;
-    height: 46rem;
+    height: 53.8rem;
     color: WhiteSmoke;
     background-color: black;
 }
@@ -113,8 +128,8 @@ div.right h1 {
 
 div.left {
     width: 60%;
+    flex-direction: column;
     padding-bottom: 2rem;
-    /*    height: 50rem;*/
     background-color: black;
     float: left;
     color: white;
@@ -124,7 +139,6 @@ div.left {
 h1 {
     width: 80%;
     margin-top: 4rem;
-    margin-left: 10px;
     text-align: center;
     font-variant: small-caps;
     font-weight: 200;
@@ -132,17 +146,12 @@ h1 {
     letter-spacing: .1rem;
 }
 
-.left p {
-    margin-left: 20px;
-}
-
 .left h1 {
-    width: 90%;
     margin-top: 0px;
 }
 
 div.container.brief {
-    width: 80%;
+    width: 100%;
     height: 100px;
     margin-left: 10px;
     margin-top: 2rem;
@@ -159,6 +168,7 @@ div.container.brief {
 .skill div:nth-child(even) {
     background-color: black;
     text-align: center;
+    font-size: .9rem;
 }
 
 div.sub-skill {
@@ -177,7 +187,66 @@ div.sub-skill {
     padding: 0;
 }
 
+div .container.portafolio {
+    flex-direction: row;
+    width: 100%;
+}
 
+div.project {
+    flex-direction: column;
+    width: 23%;
+    height: 20rem;
+    margin-left: 10px;
+}
+
+.project h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    height: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.project p {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 40px;
+    font-size: .9rem;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: 200;
+    letter-spacing: .1rem;
+}
+
+.project button {
+    background-color: transparent;
+    border-radius: 80%;
+    width: 30px;
+    height: 30px;
+    border-style: solid black 3rem;
+    margin-top: 10px;
+}
+.project-title{
+    align-items: left;
+    margin-top: 0px;
+    overflow: hidden;
+    height: 6rem;
+    margin-bottom: 10px;
+    border-bottom:solid grey .1rem;
+    background-color: transparent;
+}
+.project-title h1{
+    margin-top: 36px;
+    margin-left: 19%;
+
+    color:Maroon;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .1rem;
+
+}
 
 
 /*disappear ipad / iphone content for desktop desing */
@@ -204,13 +273,30 @@ div.sub-skill {
         display: block;
         text-align: left;
     }
-    .left p {
+    div.container.brief {
         width: 90%;
+    }
+    div.right {
+        height: 57.4rem;
+    }
+    .left h1 {
+        width: 100%;
     }
     .skill div:nth-child(odd) {
         font-size: .8rem;
     }
 }
+
+@media screen and (max-width: 375px) {
+    div.right {
+        height: 65.9rem;
+    }
+    div.container.project {
+        width: 24.5%;
+        margin-left: 1px;
+    }
+}
+
 
 @media only screen and (min-device-pixel-ratio: 1.5)(-o-min-device-pixel-ratio: 3/2),
 (-webkit-min-device-pixel-ratio: 1.5),
