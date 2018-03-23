@@ -186,11 +186,40 @@ div.sub-skill {
     margin: 0;
     padding: 0;
 }
+.project-title{
+    align-items: left;
+    margin-top: 0px;
+    overflow: hidden;
+    height: 6rem;
+    margin-bottom: 10px;
+    border-bottom:solid grey .1rem;
+    background-color: transparent;
+}
+.project-title h1{
+    margin-top: 36px;
+    margin-left: 22%;
+    color:Maroon;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .1rem;
+
+}
 
 div .container.portafolio {
     flex-direction: row;
     width: 100%;
 }
+
+/*div.container.portafolio div:nth-child(1){
+    background-color: rgba(204,204,255,0.2);
+    margin-left: outset black .4rem;
+}*/
+div.container.portafolio div:nth-child(odd){
+   background-color: rgba(255,204,204,0.1);
+}
+
 
 div.project {
     flex-direction: column;
@@ -198,11 +227,15 @@ div.project {
     height: 20rem;
     margin-left: 10px;
 }
-
+.project img{
+    width: 30px;
+    margin-bottom: 0px;
+}
 .project h1 {
     font-size: 1rem;
     font-weight: 400;
     height: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -226,26 +259,9 @@ div.project {
     border-style: solid black 3rem;
     margin-top: 10px;
 }
-.project-title{
-    align-items: left;
-    margin-top: 0px;
-    overflow: hidden;
-    height: 6rem;
-    margin-bottom: 10px;
-    border-bottom:solid grey .1rem;
-    background-color: transparent;
-}
-.project-title h1{
-    margin-top: 36px;
-    margin-left: 19%;
 
-    color:Maroon;
-    font-size: 4rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: .1rem;
-
+.contact{
+    
 }
 
 
@@ -295,7 +311,11 @@ div.project {
         width: 24.5%;
         margin-left: 1px;
     }
+    .project-title h1{
+        margin-left: 20%;
+    }
 }
+
 
 
 @media only screen and (min-device-pixel-ratio: 1.5)(-o-min-device-pixel-ratio: 3/2),
