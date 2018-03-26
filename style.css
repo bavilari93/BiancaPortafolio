@@ -202,7 +202,7 @@ div.project {
     flex-direction: column;
     width: 23%;
     height: 20rem;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .project img {
@@ -236,7 +236,7 @@ div.project {
     width: 30px;
     height: 30px;
     border-style: solid black 3rem;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .contact {
@@ -322,7 +322,7 @@ div.container.individual-project{
 .individual-project span{
     float: left;
     width: 30%;
-    margin-left: 8px;
+    margin-left: 10px;
     flex-direction: column;
 }
 .individual-project span a{
@@ -383,10 +383,14 @@ background-color:black;
         width: 90%;
     }
     div.right {
-        height: 57.4rem;
+        height: 63.5rem;
     }
     .left h1 {
         width: 100%;
+    }
+     div.container.project {
+        width: 23%;
+        margin-left: 1px;
     }
     .skill div:nth-child(odd) {
         font-size: .8rem;
@@ -395,10 +399,10 @@ background-color:black;
 
 @media screen and (max-width: 375px) {
     div.right {
-        height: 70rem;
+        height: 65.9rem;
     }
     div.container.project {
-        width: 24.4%;
+        width: 24.5%;
         margin-left: 1px;
     }
 }
