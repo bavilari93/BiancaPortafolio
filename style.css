@@ -236,7 +236,7 @@ div.project {
     width: 30px;
     height: 30px;
     border-style: solid black 3rem;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .contact {
@@ -395,10 +395,10 @@ background-color:black;
 
 @media screen and (max-width: 375px) {
     div.right {
-        height: 65.9rem;
+        /*height: 65.9rem*/;
     }
     div.container.project {
-        width: 26%;
+        width: 24.5%;
         margin-left: 1px;
     }
 }
