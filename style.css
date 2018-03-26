@@ -283,6 +283,20 @@ div.project {
     border-style: solid black .2rem;
     width: 80%;
 }
+.modal-content h1{
+    margin: 0 auto;
+    font-weight: 400px;
+    margin-top: 2rem;
+    text-align: center;
+}
+.modal-content p{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 200;
+    width: 80%;
+    letter-spacing: .2rem;
+    margin-bottom: 3rem;
+}
 .close{
     color: #aaa;
     float: right;
@@ -291,7 +305,47 @@ div.project {
 }
 .front-end{
     display: none;
+    flex-direction: column;
 }
+div.container.individual-project{
+    flex-direction: row;
+    display: inline-flex;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: solid Grey .1rem;
+
+}
+.individual-project img{
+        width: 60%;
+        position: relative;
+}
+.individual-project span{
+    float: left;
+    width: 30%;
+    margin-left: 8px;
+    flex-direction: column;
+}
+.individual-project span a{
+    width: 50px;
+}
+.individual-project a img.icon{
+width: 50px;
+border-radius: 100%;
+background-color:black;
+}
+.individual-project span h1{
+    margin: 0 auto;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.individual-project span h4{
+    height: 30px;
+    flex-wrap: wrap;
+}
+.individual-project span p{
+   font-size: .9rem;}
+
 .full-stack{
     display: none;
 }
@@ -356,4 +410,7 @@ div.project {
         width: 40px;
         margin-left: 1rem;
     }
+    .individual-project img{
+    max-width: 80%;
+}
 }

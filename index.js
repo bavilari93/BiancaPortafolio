@@ -31,6 +31,7 @@ $(function() {
     }
     // modal display 
     const modalBox = (value) => {
+    	console.log(value);
         // push values of previously selected
         removeList.push(value);
         modal.style.display = "block"
