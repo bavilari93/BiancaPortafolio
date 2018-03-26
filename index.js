@@ -35,6 +35,7 @@ $(function() {
         // push values of previously selected
         removeList.push(value);
         modal.style.display = "block"
+        
         // remove prevously selected elements
         remover(removeList);
         const modeSelector = modal.querySelectorAll(`.${value}`)[0];

@@ -202,7 +202,7 @@ div.project {
     flex-direction: column;
     width: 23%;
     height: 20rem;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .project img {
@@ -395,10 +395,10 @@ background-color:black;
 
 @media screen and (max-width: 375px) {
     div.right {
-        /*height: 65.9rem*/;
+        height: 70rem;
     }
     div.container.project {
-        width: 24.5%;
+        width: 24.4%;
         margin-left: 1px;
     }
 }
