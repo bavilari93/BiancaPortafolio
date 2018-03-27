@@ -413,8 +413,8 @@ background-color:black;
         margin-left: 1px;
     }
     .close{
-        margin-right: 10%;
-        font-size: 5rem;
+        margin-right: 10%!important;
+        font-size: 5rem !important;;
     }
 }
 
