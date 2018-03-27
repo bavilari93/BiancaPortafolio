@@ -308,7 +308,7 @@ div.project {
     letter-spacing: .2rem;
     margin-bottom: 3rem;
 }
-#close{
+.close{
     color: #aaa;
     float: right;
     font-size: 28px;
