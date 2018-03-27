@@ -49,19 +49,15 @@ $(function() {
             modeSelector.style.display = "block"
         }
     }
-    // close the span
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
+
     // click outside of the modal 
-    modal.onclick = function(){
-    	modal.style.display = "none";
+    window.onclick = function(e) {
+    	console.log(e);
+    	console.log("im coling the modal");
+        if (e.target == modal) {
+            modal.style.display = "none";
+        }else if( e.target == span){
+        	modal.style.display = "none";
+        }
     }
-    // window.onclick = function(e) {
-    // 	console.log(e);
-    // 	console.log("im coling the modal");
-    //     if (e.target == modal) {
-    //         modal.style.display = "none";
-    //     }
-    // }
 }) // end of j query
