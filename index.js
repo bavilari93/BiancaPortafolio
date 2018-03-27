@@ -34,13 +34,13 @@ $(function() {
     	console.log(value);
         // push values of previously selected
         removeList.push(value);
-        modal.style.display = "block"
+        modal.style.width = "100%"
 
         // remove prevously selected elements
         remover(removeList);
         const modeSelector = modal.querySelectorAll(`.${value}`)[0];
         if (value === "front-end") {
-            modeSelector.style.display = "block"
+            modeSelector.style.display= "block"
         } else if (value === "full-stack") {
             modeSelector.style.display = "block"
         } else if (value === "react") {
@@ -55,9 +55,9 @@ $(function() {
     	console.log(e);
     	console.log("im coling the modal");
         if (e.target == modal) {
-            modal.style.display = "none";
+            modal.style.width = "0%";
         }else if( e.target == span){
-        	modal.style.display = "none";
+        	modal.style.width = "0%";
         }
     }
 }) // end of j query
