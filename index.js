@@ -22,7 +22,6 @@ $(function() {
     const span = document.getElementsByClassName("close")[0];
     const removeList = [];
 
-
     // display remover 
     const remover = (list) => {
         list.forEach(e => {
@@ -41,7 +40,7 @@ $(function() {
         remover(removeList);
         const modeSelector = modal.querySelectorAll(`.${value}`)[0];
         if (value === "front-end") {
-            modeSelector.style.display= "block"
+            modeSelector.style.display = "block"
         } else if (value === "full-stack") {
             modeSelector.style.display = "block"
         } else if (value === "react") {
@@ -58,7 +57,7 @@ $(function() {
         if (e.target == modal) {
             modal.style.display = "none";
         }else if( e.target == span){
-        	modal.style.display= "none";
+        	modal.style.display = "none";
         }
     }
 }) // end of j query
