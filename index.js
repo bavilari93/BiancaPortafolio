@@ -54,11 +54,14 @@ $(function() {
         modal.style.display = "none";
     }
     // click outside of the modal 
-    window.onclick = function(e) {
-    	console.log(e);
-    	console.log("im coling the modal");
-        if (e.target == modal) {
-            modal.style.display = "none";
-        }
+    modal.onclick = function(){
+    	modal.style.display = "none";
     }
+    // window.onclick = function(e) {
+    // 	console.log(e);
+    // 	console.log("im coling the modal");
+    //     if (e.target == modal) {
+    //         modal.style.display = "none";
+    //     }
+    // }
 }) // end of j query
