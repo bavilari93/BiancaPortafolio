@@ -19,7 +19,7 @@ $(function() {
     })
     // select dom elements 
     const modal = document.getElementById("modal");
-    const span = document.getElementsByClassName("close")[0];
+    const span = document.getElementById("close");
     const removeList = [];
 
     // display remover 
