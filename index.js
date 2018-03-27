@@ -19,10 +19,9 @@ $(function() {
     })
     // select dom elements 
     const modal = document.getElementById("modal");
-    const span = modal.getElementsByClassName("close");
-
-
+    const span = document.getElementsByClassName("close")[0];
     const removeList = [];
+
 
     // display remover 
     const remover = (list) => {
@@ -58,9 +57,7 @@ $(function() {
     	console.log("im coling the modal");
         if (e.target == modal) {
             modal.style.width = "0%";
-        }else if( e.target == span[0]){
-        	modal.style.width = "0%";
-        }else if( e.target == span[1]){
+        }else if( e.target == span){
         	modal.style.width = "0%";
         }
     }
