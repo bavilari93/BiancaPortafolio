@@ -55,7 +55,6 @@ $(function() {
     // click outside of the modal 
     window.onclick = function(e) {
     	console.log(e);
-    	console.log(span);
     	console.log("im coling the modal");
         if (e.target == modal) {
             modal.style.width = "0%";
