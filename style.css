@@ -281,12 +281,11 @@ div.project {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 .modal-content{
-    display: scroll;
     background-color: white;
-    margin: 15% auto;
+    margin: 20% auto;
     padding: 20px;
     border-style: solid black .2rem;
-    width: 80%;
+    width: 60%;
 }
 .modal-content h1{
     margin: 0 auto;
@@ -396,10 +395,6 @@ background-color:black;
     }
     .skill div:nth-child(odd) {
         font-size: .8rem;
-    }
-    .modal-content{
-    margin: 30%;
-    width: 60%;
     }
 }
 
