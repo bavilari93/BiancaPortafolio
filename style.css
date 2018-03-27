@@ -327,12 +327,12 @@ div.container.individual-project{
 
 }
 .individual-project img{
-        width: 60%;
+        width: 40%;
         position: relative;
 }
 .individual-project span{
     float: left;
-    width: 30%;
+    width: 50%;
     margin-left: 10px;
     flex-direction: column;
 }
