@@ -35,7 +35,7 @@ $(function() {
     	console.log(value);
         // push values of previously selected
         removeList.push(value);
-        modal.style.width = "100%"
+        modal.style.display = "block"
 
         // remove prevously selected elements
         remover(removeList);
@@ -56,9 +56,9 @@ $(function() {
     	console.log(e);
     	console.log("im coling the modal");
         if (e.target == modal) {
-            modal.style.width = "0%";
+            modal.style.display = "none";
         }else if( e.target == span){
-        	modal.style.width = "0%";
+        	modal.style.display= "none";
         }
     }
 }) // end of j query
