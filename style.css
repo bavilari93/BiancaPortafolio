@@ -285,7 +285,6 @@ div.project {
 .modal-content{
     background-color: white;
     position: relative;
-    display: scroll;
     overflow: auto;
     width: 80%;
     height:43rem;
