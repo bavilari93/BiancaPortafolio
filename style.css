@@ -91,27 +91,31 @@ div .container.skills {
     overflow: hidden;
 }
 
-div.right {
-    width: 40%;
-    height: 53.8rem;
-    color: WhiteSmoke;
-    background-color: black;
+span .container {
+    flex-direction: row;
+    display: inline-flex;
 }
-
-div.right h1 {
-    width: 50%;
+.left span h1 {
+    width: 20%;
     margin-top: 3rem;
     margin-left: 2rem;
     font-variant: small-caps;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 0px;
     letter-spacing: .2rem;
     border-bottom: solid LightGrey .1rem;
 }
+.left span p{
+    
+    float: left;
+    width: 50%;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+}
 
 div.left {
-    width: 60%;
+    width: 100%;
     flex-direction: column;
     padding-bottom: 2rem;
     background-color: black;
@@ -277,6 +281,7 @@ div.project {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 .modal-content{
+    display: scroll;
     background-color: white;
     margin: 15% auto;
     padding: 20px;
@@ -382,9 +387,6 @@ background-color:black;
     div.container.brief {
         width: 90%;
     }
-    div.right {
-        height: 55rem;
-    }
     .left h1 {
         width: 100%;
     }
@@ -395,12 +397,13 @@ background-color:black;
     .skill div:nth-child(odd) {
         font-size: .8rem;
     }
+    .modal-content{
+    margin: 30%;
+    width: 60%;
+    }
 }
 
 @media screen and (max-width: 375px) {
-    div.right {
-        height: 65.9rem;
-    }
     div.container.project {
         width: 24.5%;
         margin-left: 1px;
