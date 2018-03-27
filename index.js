@@ -35,7 +35,7 @@ $(function() {
         // push values of previously selected
         removeList.push(value);
         modal.style.display = "block"
-        
+
         // remove prevously selected elements
         remover(removeList);
         const modeSelector = modal.querySelectorAll(`.${value}`)[0];
@@ -55,6 +55,8 @@ $(function() {
     }
     // click outside of the modal 
     window.onclick = function(e) {
+    	console.log(e);
+    	console.log("im coling the modal");
         if (e.target == modal) {
             modal.style.display = "none";
         }
