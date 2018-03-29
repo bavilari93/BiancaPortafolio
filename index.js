@@ -12,11 +12,17 @@ $(function() {
 
     })
 
+    var scrt_var = 10;
     // modal boxes 
-    $(".portafolio").find(":button").click(function() {
+    $(".button-project").click(function() {
+
         var value = $(this).val();
         modalBox(value);
     })
+    // cv button 
+    $
+
+
     // select dom elements 
     const modal = document.getElementById("modal");
     const span = document.getElementsByClassName("close")[0];
@@ -31,7 +37,6 @@ $(function() {
     }
     // modal display 
     const modalBox = (value) => {
-    	console.log(value);
         // push values of previously selected
         removeList.push(value);
         modal.style.width = "100%"
@@ -45,7 +50,7 @@ $(function() {
             modeSelector.style.display = "block"
         } else if (value === "react") {
             modeSelector.style.display = "block"
-        } else {
+        } else if (value === "cv") {
             modeSelector.style.display = "block"
         }
     }

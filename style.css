@@ -95,6 +95,7 @@ span .container {
     flex-direction: row;
     display: inline-flex;
 }
+
 .left span h1 {
     width: 20%;
     margin-top: 3rem;
@@ -106,8 +107,9 @@ span .container {
     letter-spacing: .2rem;
     border-bottom: solid LightGrey .1rem;
 }
-.left span p{
-    
+
+.left span p {
+
     float: left;
     width: 50%;
     margin-left: 4rem;
@@ -146,6 +148,11 @@ div.container.brief {
     flex-direction: row;
 }
 
+.brief button {
+    background-color: transparent;
+    border: none;
+}
+
 .skill {
     font-variant: small-caps;
     flex-direction: row;
@@ -174,10 +181,11 @@ div.sub-skill {
     margin: 0;
     padding: 0;
 }
+
 .project-title {
     flex-direction: row;
     overflow: hidden;
-   /* height: 6rem;*/
+    /* height: 6rem;*/
     border-bottom: solid grey .1rem;
     background-color: transparent;
 }
@@ -268,39 +276,41 @@ div.project {
     margin-top: -25px;
 }
 
-.project-modal{
+.project-modal {
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-   /* display: none;*/
+    /* display: none;*/
     width: 0%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     overflow-x: hidden;
     transition: 0.5s;
-
 }
-.modal-content{
+
+.modal-content {
     background-color: white;
     position: relative;
     overflow: auto;
     width: 80%;
-    height:30rem;
+    height: 30rem;
     margin: 15% auto;
     padding: 20px;
     border-style: solid black .2rem;
     width: 80%;
 }
-.modal-content h1{
+
+.modal-content h1 {
     margin: 0 auto;
     font-weight: 400px;
     margin-top: 2rem;
     text-align: center;
 }
-.modal-content p{
+
+.modal-content p {
     margin: 0 auto;
     text-align: center;
     font-weight: 200;
@@ -308,64 +318,82 @@ div.project {
     letter-spacing: .2rem;
     margin-bottom: 3rem;
 }
-.close{
+
+.close {
     color: WhiteSmoke;
     float: right;
     margin-right: 5%;
     font-size: 5rem;
     font-weight: bold;
 }
-.front-end{
+
+.front-end {
     display: none;
     flex-direction: column;
 }
-div.container.individual-project{
+
+div.container.individual-project {
     flex-direction: row;
     display: inline-flex;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
     border-bottom: solid Grey .1rem;
+}
 
+.individual-project img {
+    width: 40%;
+    position: relative;
 }
-.individual-project img{
-        width: 40%;
-        position: relative;
-}
-.individual-project span{
+
+.individual-project span {
     float: left;
     width: 50%;
     margin-left: 10px;
     flex-direction: column;
 }
-.individual-project span a{
+
+.individual-project span a {
     width: 50px;
 }
-.individual-project a img.icon{
-width: 50px;
-border-radius: 100%;
-background-color:black;
+
+.individual-project a img.icon {
+    width: 50px;
+    border-radius: 100%;
+    background-color: black;
 }
-.individual-project span h1{
+
+.individual-project span h1 {
     margin: 0 auto;
     font-size: 1.3rem;
     margin-bottom: 5px;
     font-weight: 400;
 }
-.individual-project span h4{
+
+.individual-project span h4 {
     height: 30px;
     flex-wrap: wrap;
 }
-.individual-project span p{
-   font-size: .9rem;}
 
-.full-stack{
+.individual-project span p {
+    font-size: .9rem;
+}
+
+embed{
+    margin-top: 0 auto;
+    width: 800px;
+    height: 400px;
+    outline: none;
+}
+
+.full-stack {
     display: none;
 }
 
-.react{
+.react {
     display: none;
 }
-.express{
+
+.express {
     display: none;
 }
 
@@ -397,14 +425,13 @@ background-color:black;
     .left h1 {
         width: 100%;
     }
-     div.container.project {
+    div.container.project {
         width: 23%;
         margin-left: 1px;
     }
     .skill div:nth-child(odd) {
         font-size: .8rem;
     }
-
 }
 
 @media screen and (max-width: 375px) {
@@ -412,9 +439,10 @@ background-color:black;
         width: 24.5%;
         margin-left: 1px;
     }
-    .close{
+    .close {
         margin-right: 10%!important;
-        font-size: 5rem !important;;
+        font-size: 5rem !important;
+        ;
     }
 }
 
@@ -425,7 +453,7 @@ background-color:black;
         width: 40px;
         margin-left: 1rem;
     }
-    .individual-project img{
-    max-width: 80%;
-}
+    .individual-project img {
+        max-width: 80%;
+    }
 }
