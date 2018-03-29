@@ -379,8 +379,8 @@ div.container.individual-project {
 }
 
 embed{
-    margin-top: 0 auto;
-    width: 800px;
+    margin-top: -5rem;
+    width: 400px;
     height: 400px;
     outline: none;
 }
