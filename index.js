@@ -12,15 +12,14 @@ $(function() {
 
     })
 
-    var scrt_var = 10;
     // modal boxes 
     $(".button-project").click(function() {
 
         var value = $(this).val();
+         console.log(value);
         modalBox(value);
     })
-    // cv button 
-    $
+
 
 
     // select dom elements 
@@ -37,6 +36,7 @@ $(function() {
     }
     // modal display 
     const modalBox = (value) => {
+        console.log(value);
         // push values of previously selected
         removeList.push(value);
         modal.style.width = "100%"
@@ -50,7 +50,7 @@ $(function() {
             modeSelector.style.display = "block"
         } else if (value === "react") {
             modeSelector.style.display = "block"
-        } else if (value === "cv") {
+        } else if (value === "express") {
             modeSelector.style.display = "block"
         }
     }
