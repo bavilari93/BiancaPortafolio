@@ -203,6 +203,7 @@ div.sub-skill {
 div .container.portafolio {
     flex-direction: row;
     width: 100%;
+     height: 46rem;
 }
 
 div.container.portafolio div:nth-child(odd) {
@@ -213,7 +214,7 @@ div.container.portafolio div:nth-child(odd) {
 div.project {
     flex-direction: column;
     width: 23%;
-    height: 20rem;
+    height: 30rem;
     margin-left: 10px;
 }
 
