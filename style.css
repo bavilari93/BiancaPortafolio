@@ -136,6 +136,7 @@ h1 {
     width: 100%;
     height: 40rem;
     background-color: white;
+    margin-bottom: 3rem;
 }
 
 .skill div:nth-child(even) {
@@ -233,14 +234,14 @@ div.project {
 
 .contact {
     margin-top: 20px;
-    height: 38.2rem;
+    height: 39.6rem;
     background-color: black;
     color: white;
     overflow: hidden;
 }
 .contact img{
     margin-top: 20px;
-    width: 50%;
+    width: 15rem;
 }
 
 div.container.brief {
