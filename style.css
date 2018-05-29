@@ -82,6 +82,7 @@ html {
 }
 
 .main button {
+    width: 15rem;
     height: 50px;
     background: none;
     color: Grey;
