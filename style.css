@@ -74,6 +74,11 @@ html {
     line-height: 2rem;
     margin-top: .3rem;
     color: Maroon;
+    margin-bottom: -10px;
+}
+
+.main .grayscale { 
+    filter: invert(79%); 
 }
 
 .main button {
