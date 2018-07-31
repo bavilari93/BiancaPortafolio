@@ -355,9 +355,12 @@ div.container.individual-project {
 }
 
 .individual-project a img.icon {
-    width: 50px;
+    width: 35px;
     border-radius: 100%;
     background-color: black;
+}
+div.icon-container{
+    display: inline-flex;
 }
 
 .individual-project span h1 {
