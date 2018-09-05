@@ -65,6 +65,7 @@ $(function() {
 
     // section transition
     window.addEventListener('scroll', function(){
+        // appear on scroll effect
         const pageTop = $(this).scrollTop()
         const pageBottom = pageTop + $(this).height()
         var tags = $('section')
