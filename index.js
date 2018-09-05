@@ -62,4 +62,19 @@ $(function() {
             modal.style.width = "0%";
         }
     }
+
+    // section transition
+    window.addEventListener('scroll', function(){
+        const pageTop = $(this).scrollTop()
+        const pageBottom = pageTop + $(this).height()
+        var tags = $('section')
+         for (var i = 0; i < tags.length; i++) {
+                        let tag = tags[i]
+                        if ($(tag).position().top < pageBottom) {
+                            $(tag).addClass('visible')
+                        } else {
+                            $(tag).removeClass('visible')
+                        }
+                    }
+    })
 }) // end of j query

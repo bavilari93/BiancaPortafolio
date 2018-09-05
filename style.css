@@ -55,6 +55,7 @@ html {
     height: 46rem;
     flex-direction: column;
     background-color: white;
+
 }
 
 .main h2 {
@@ -91,6 +92,14 @@ html {
     margin-bottom: 0px;
     letter-spacing: .2rem;
     border: solid LightGrey .3rem;
+}
+section{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+section.visible {
+    opacity: 1;
 }
 
 div .container.skills {
