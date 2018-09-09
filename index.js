@@ -6,7 +6,6 @@ $(() => {
                 modalBox(value);
             })
 
-
             // select dom elements 
             const modal = document.getElementById("modal");
             const span = document.getElementsByClassName("close")[0];
@@ -52,25 +51,32 @@ $(() => {
             }
             // topnav mobile 
             const topNav = document.getElementById("myTopNav");
-            const container = document.querySelector('.modal-container');
+            const modalTopNav = document.getElementById('modal-topnav');
             $('.icon').click(() => {
+                console.log(modalTopNav);
                 if (topNav.className === 'top-nav') {
                     topNav.className += " responsive";
-                    container.style.display = 'block';
+                    modalTopNav.style.display = 'block';
+                    $('#modal-topnav').toggleClass('modal-container ');
                     $('.icon').toggleClass("change");
-
                 } else {
+                    console.log('this is it');
                     topNav.className = 'top-nav'
-                    container.style.display = 'none';
+                    modalTopNav.style.display = 'none';
                     $(".icon").removeClass('change');
+                    $('#modal-topnav').removeClass('modal-container');
                 }
             })
             // close when click on a top-nav 
-            container.addEventListener('click', function(e){
-                console.log('click');
-                topNav.className = 'top-nav'
-                 container.style.display = 'none';
+            modalTopNav.addEventListener('click', function(e){
+                if(topNav.className === 'top-nav'){
+                    modalTopNav.style.display = 'block';
+                }else{
+                    topNav.className = 'top-nav'
+                 modalTopNav.style.display = 'none';
                  $(".icon").removeClass('change');
+                 $('#modal-topnav').removeClass('modal-container');
+                }
             })
             
 

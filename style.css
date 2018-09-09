@@ -483,8 +483,11 @@
             margin-top: 2rem;
             width: 40%;
         }
-        div .modal-container {
+        #modalTopNav{
             display: none;
+        }
+        div .modal-container {
+            
             height: 20rem;
             background-color: white;
             position: relative;
