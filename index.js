@@ -53,7 +53,6 @@ $(() => {
             const topNav = document.getElementById("myTopNav");
             const modalTopNav = document.getElementById('modal-topnav');
             $('.icon').click(() => {
-                console.log(modalTopNav);
                 if (topNav.className === 'top-nav') {
                     topNav.className += " responsive";
                     modalTopNav.style.display = 'block';
