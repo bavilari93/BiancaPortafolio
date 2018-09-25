@@ -29,6 +29,12 @@
     #mainWrap {
         display: flex;
     }
+
+    /*nav bar non display on desktop view*/
+    
+    div#topNav.navbar {
+        display: none;
+    }
     /*parallax*/
 
     #parallax {
@@ -397,12 +403,6 @@
     .express {
         display: none;
     }
-
-    div#topNav.navbar {
-        display: none;
-    }
-
-
     @media screen and (max-width: 768px) {
         /*top nav */
         div#topNav.navbar {
