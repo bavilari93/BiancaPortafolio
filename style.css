@@ -409,11 +409,11 @@
         position: fixed;
         overflow: hidden;
     }
-
+/*
     .navbar {
         height: 10rem;
         width: 3rem;
-    }
+    }*/
 
     a {
         text-decoration: none;
@@ -423,6 +423,7 @@
     .navbar.responsive {
         background-color: #000;
         width: 100%;
+        height: 100vh;
     }
 
     .navbar.responsive .bar1 {

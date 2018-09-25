@@ -56,14 +56,14 @@ $(() => {
             const modalTopNav = document.getElementById('innerNav');
             $('.icon').click(() => {
                 if (topNav.className === 'navbar') {
-                    console.log('this is nav')
+
                     topNav.className += " responsive";
                     modalTopNav.style.display = 'flex';
                     mainWrap.style.display = 'none'
                     $('.icon').toggleClass("change");
     
                 } else {
-                    console.log('this is it');
+
                      mainWrap.style.display = 'flex'
                     topNav.className = 'navbar'
                     modalTopNav.style.display = 'none';
