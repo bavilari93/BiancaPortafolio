@@ -7,7 +7,8 @@
 
     html {
         font: 14px;
- font-family: 'Open Sans', sans-serif;        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
         background-color: white;
         font-variant: small-caps;
     }
@@ -24,37 +25,10 @@
         align-items: center;
         justify-content: center;
     }
+#mainWrap{
+    display:flex;
+}
 
-    div #myTopNav.topNav {
-        z-index: 99;
-    }
-
-    .top-nav {
-        background-color: transparent;
-        position: fixed;
-        width: 100%s;
-        height: 5rem;
-        overflow: hidden;
-        font-style: normal;
-        font-variant: small-caps;
-        font-weight: 100;
-        line-height: 2rem;
-    }
-
-    .top-nav a {
-        float: right;
-        display: block;
-        margin-right: 3rem;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 1.4rem;
-    }
-
-    div.icon {
-        display: none;
-    }
     /*parallax*/
 
     #parallax {
@@ -69,9 +43,9 @@
         background-size: cover;
     }
 
-    #main .grayscale { 
-    filter: invert(79%); 
-}
+    #main .grayscale {
+        filter: invert(79%);
+    }
 
     #main h2 {
         text-align: center;
@@ -427,66 +401,116 @@
 
 
     @media screen and (max-width: 768px) {
-        .top-nav a {
-            display: none;
-        }
+    /*top nav */
 
-        /*top-nav icon */
-        div .icon {
-            float: right;
-            margin: 1rem;
-            display: block;
-            display: inline-block;
-        }
-        .bar1,
-        .bar2,
-        .bar3 {
-            width: 30px;
-            height: 5px;
-            background-color: black;
-            margin: 6px 0;
-            transition: 0.4s;
-        }
-        .change .bar1 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
-        }
-        .change .bar2 {
-            opacity: 0;
-        }
-        .change .bar3 {
-            -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px);
-        }
-        .top-nav.responsive {
-            margin-bottom: -20px;
-            position: fixed;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            overflow: auto;
-            overflow-x: hidden;
-        }
-        .top-nav.responsive .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        .top-nav.responsive a {
-            float: none;
-            display: block;
-        }
-        div.project{
+    #topNav {
+        /*  z-index: 99;
+    background: pink;*/
+        position: fixed;
+        overflow: hidden;
+    }
+
+    .navbar {
+        height: 10rem;
+        width: 3rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    /*check what i can do with this*/
+
+    .navbar.responsive {
+        background-color: #000;
+        width: 100%;
+    }
+
+    .navbar.responsive .bar1 {
+        background: #FFF;
+    }
+
+    .navbar.responsive .bar3 {
+        background: #FFF;
+    }
+    /*nav icon  open close*/
+
+    .icon {
+        margin: 1rem;
+        display: block;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 2px;
+        background: #000;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    /*bar change when click */
+
+    .change .bar1 {
+        -webkit-transform: rotate(-20deg) translate(-9px, 6px);
+        transform: rotate(-40deg) translate(-2px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(40deg) translate(-5px, -8px);
+    }
+    /*nav bar toogle chem click*/
+
+    #innerNav {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-color: black;
+    }
+
+    .inner-nav {
+        margin-top: 3rem;
+        width: 100%;
+        height: 40rem;
+    }
+
+    .social-icons {
+        width: 2.5rem;
+        margin-left: 1rem;
+    }
+    /* nav bar navegation content*/
+
+    .content {
+        margin-left: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .content a {
+        color: #FFF;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+
+
+        div.project {
             margin-top: 2rem;
             width: 40%;
         }
-        #modalTopNav{
+        #modalTopNav {
             display: none;
         }
         div .modal-container {
-            
+
             height: 20rem;
             background-color: white;
             position: relative;
@@ -508,7 +532,7 @@
             font-size: 5rem !important;
             ;
         }
-        div.container.portafolio{
+        div.container.portafolio {
             margin-bottom: 5rem;
         }
         embed {
@@ -526,5 +550,11 @@
         }
         .individual-project img {
             max-width: 80%;
+        }
+        .inner-nav img {
+            height: 3rem;
+            width: 3rem;
+            margin-top: 1rem;
+            filter: brightness(0) invert(1);
         }
     }

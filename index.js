@@ -50,36 +50,37 @@ $(() => {
                 }
             }
             // topnav mobile 
-            const topNav = document.getElementById("myTopNav");
-            const modalTopNav = document.getElementById('modal-topnav');
+            // wrap 
+            const mainWrap= document.getElementById('mainWrap');
+            const topNav = document.getElementById('topNav');
+            const modalTopNav = document.getElementById('innerNav');
             $('.icon').click(() => {
-                if (topNav.className === 'top-nav') {
+                if (topNav.className === 'navbar') {
+                    console.log('this is nav')
                     topNav.className += " responsive";
-                    modalTopNav.style.display = 'block';
-                    $('#modal-topnav').toggleClass('modal-container ');
+                    modalTopNav.style.display = 'flex';
+                    mainWrap.style.display = 'none'
                     $('.icon').toggleClass("change");
+    
                 } else {
                     console.log('this is it');
-                    topNav.className = 'top-nav'
+                     mainWrap.style.display = 'flex'
+                    topNav.className = 'navbar'
                     modalTopNav.style.display = 'none';
-                    $(".icon").removeClass('change');
-                    $('#modal-topnav').removeClass('modal-container');
+                    $(".icon").removeClass('change');                
                 }
             })
             // close when click on a top-nav 
             modalTopNav.addEventListener('click', function(e){
-                if(topNav.className === 'top-nav'){
+                if(topNav.className === 'navbar'){
                     modalTopNav.style.display = 'block';
                 }else{
-                    topNav.className = 'top-nav'
+                    topNav.className = 'navbar'
+                   mainWrap.style.display = 'flex'
                  modalTopNav.style.display = 'none';
-                 $(".icon").removeClass('change');
-                 $('#modal-topnav').removeClass('modal-container');
-                }
+                 $(".icon").removeClass('change');                }
             })
             
-
-
 
                 const parallax = document.getElementById('parallax');
                 window.addEventListener('scroll', function() {
