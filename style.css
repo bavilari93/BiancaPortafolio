@@ -31,10 +31,11 @@
     }
 
     /*nav bar non display on desktop view*/
-    
+
     div#topNav.navbar {
         display: none;
     }
+
     /*parallax*/
 
     #parallax {
@@ -42,6 +43,7 @@
         background-size: cover;
         height: 42rem;
     }
+
     /*main container*/
 
     #main {
@@ -76,6 +78,10 @@
         flex-direction: row;
     }
 
+    button {
+        cursor: pointer;
+    }
+
     #main button {
         width: 15rem;
         height: 50px;
@@ -87,6 +93,7 @@
         letter-spacing: .2rem;
         border: solid Silver.3rem;
     }
+
     /*make each section visible when scroll*/
 
     section {
@@ -97,6 +104,7 @@
     section.visible {
         opacity: 1;
     }
+
     /*project*/
 
     div .container.skills {
@@ -403,11 +411,14 @@
     .express {
         display: none;
     }
+
     @media screen and (max-width: 768px) {
+
         /*top nav */
         div#topNav.navbar {
             display: block;
         }
+
         #topNav {
             position: fixed;
             overflow: hidden;
@@ -417,6 +428,7 @@
         a {
             text-decoration: none;
         }
+
         /*check what i can do with this*/
         .navbar.responsive {
             background-color: #000;
@@ -431,9 +443,12 @@
         .navbar.responsive .bar3 {
             background: #FFF;
         }
+
         /*nav icon  open close*/
         .icon {
             margin: 1rem;
+            margin-top: 2rem;
+            margin-left: 1.4rem;
             display: block;
         }
 
@@ -446,6 +461,7 @@
             margin: 6px 0;
             transition: 0.4s;
         }
+
         /*bar change when click */
         .change .bar1 {
             -webkit-transform: rotate(-20deg) translate(-9px, 6px);
@@ -460,6 +476,7 @@
             -webkit-transform: rotate(45deg) translate(-8px, -8px);
             transform: rotate(40deg) translate(-5px, -8px);
         }
+
         /*nav bar toogle chem click*/
         #innerNav {
             display: none;
@@ -473,17 +490,24 @@
         .inner-nav {
             margin-top: 3rem;
             width: 100%;
-            height: 40rem;
+            height: 100vh;
         }
 
         .social-icons {
             width: 2.5rem;
             margin-left: 1rem;
         }
+
         /* nav bar navegation content*/
+        .side-nav{
+            display: flex; 
+            flex-direction: column;
+        }
         .content {
-            margin-left: 2rem;
-            width: 100%;
+            margin-left: -2.5rem;
+            margin-top: 2rem;
+            width: 100vw;
+            height:65vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -496,14 +520,23 @@
             text-transform: uppercase;
         }
 
+        .nav-email {
+            width: 100vw;
+            color: white;
+            font-size: .5rem;
+            text-align: center;
+        }
+
 
         div.project {
             margin-top: 2rem;
             width: 40%;
         }
+
         #modalTopNav {
             display: none;
         }
+
         div .modal-container {
 
             height: 20rem;
@@ -517,19 +550,23 @@
             border-style: solid black .2rem;
             width: 80%;
         }
+
         .modal-container a {
             margin-top: 20px;
             align-self: center;
             color: black;
         }
+
         .close {
-            margin-right: 10%!important;
+            margin-right: 10% !important;
             font-size: 5rem !important;
             ;
         }
+
         div.container.portafolio {
             margin-bottom: 5rem;
         }
+
         embed {
             width: 200px;
         }
@@ -542,9 +579,11 @@
             width: 40px;
             margin-left: 1rem;
         }
+
         .individual-project img {
             max-width: 80%;
         }
+
         .inner-nav img {
             height: 3rem;
             width: 3rem;
