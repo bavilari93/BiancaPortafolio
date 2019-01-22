@@ -4,9 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
-body{.modal-open { 
-  overflow: hidden;
-}}
+
 
 
 html {
@@ -309,6 +307,12 @@ nav {
         width: 200px;
     }
 
+    /*modal close*/
+    span {
+        .close {
+            position: fixed;
+        }
+    }
 
 }
 
@@ -502,7 +506,7 @@ nav {
             color: black;
             height: 25rem;
             padding-bottom: 2rem;
-            overflow:hidden;
+            overflow: hidden;
 
             img {
                 max-width: 80%;
@@ -520,9 +524,9 @@ nav {
                 @include flex;
                 flex-direction: row;
                 height: 1rem;
-                margin-top:1rem;
+                margin-top: 1rem;
                 position: absolute;
-                
+
                 top: 0;
                 right: 0;
                 cursor: pointer;
@@ -564,6 +568,7 @@ nav {
 #full-stack,
 #react,
 #express {
+    scroll-behavior: smooth;
     @include flex;
     flex-direction: column;
     position: fixed;
@@ -733,25 +738,27 @@ nav {
 }
 
 /*-----------hand  section ----------------*/
-#hand{
-    color:black;
-    p{
-        font-size:.9rem;
-        color:grey;
+#hand {
+    color: black;
+
+    p {
+        font-size: .9rem;
+        color: grey;
     }
 }
+
 .square {
     height: 6rem;
     width: 6rem;
     text-align: center;
     position: relative;
-    margin-top:4rem;
+    margin-top: 4rem;
 
     h1 {
         cursor: pointer;
-        text-transform:uppercase;
-        font-weight:200;
-        font-size:1.5rem;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1.5rem;
 
     }
 
@@ -781,6 +788,7 @@ nav {
             }
 
         }
+
         &:before {
             display: block;
             animation: .3s ease-out 0s 1 resize;
@@ -835,6 +843,7 @@ nav {
         max-width: 1.5rem;
     }
 }
+
 /* --------about section ------------------ */
 #about {
     @include flex;

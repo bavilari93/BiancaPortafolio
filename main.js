@@ -15,8 +15,8 @@ $(() => {
     
                 } else {
 
-                     mainWrap.style.display = 'flex'
-                    topNav.className = 'navbar'
+                     mainWrap.style.display = 'flex';
+                    topNav.className = 'navbar';
                     modalTopNav.style.display = 'none';
                     $(".icon").removeClass('change');                
                 }
@@ -69,7 +69,7 @@ $(() => {
 
         if (skillArray.includes(value)) {
             slideSection.style.width = '100%';
-            $("body").addClass("modal-open");
+             mainWrap.style.display = 'none';
 
 
         }
@@ -78,7 +78,7 @@ $(() => {
 
 
             slideSection.style.width = "0%";
-            $("body").removeClass("modal-open")
+            mainWrap.style.display = 'flex';
         }
 
     }
