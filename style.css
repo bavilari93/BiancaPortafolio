@@ -412,6 +412,7 @@ nav {
 #full-stack,
 #react,
 #express {
+  scroll-behavior: smooth;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -529,7 +530,7 @@ nav {
   #brain .side-text-core {
     width: 50%;
     padding: 2rem;
-    margin-top: 15rem; }
+    margin-top: 5rem; }
     #brain .side-text-core h1 {
       text-transform: uppercase;
       text-align: center;
@@ -557,19 +558,19 @@ nav {
     text-transform: uppercase;
     font-weight: 200;
     font-size: 1.5rem; }
-  .square:hover h1 {
+  .square.active h1 {
     display: none; }
-  .square:hover a {
+  .square.active a {
     display: inline; }
-    .square:hover a:nth-child(1) {
+    .square.active a:nth-child(1) {
       animation: .3s ease-out 0s icon; }
-    .square:hover a:nth-child(2) {
+    .square.active a:nth-child(2) {
       animation: .3s ease-out 0s iconTwo; }
-    .square:hover a:nth-child(3) {
+    .square.active a:nth-child(3) {
       animation: .3s ease-out 0s iconThree; }
-    .square:hover a:nth-child(4) {
+    .square.active a:nth-child(4) {
       animation: .3s ease-out 0s iconFour; }
-  .square:hover:before {
+  .square.active:before {
     display: block;
     animation: .3s ease-out 0s 1 resize; }
   .square:before {

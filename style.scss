@@ -307,15 +307,8 @@ nav {
         width: 200px;
     }
 
-    /*modal close*/
-    
-    span{
-        .close {
-            position: fixed;
-        }
-        }
 
-    
+ 
 
 }
 
@@ -722,7 +715,7 @@ nav {
     .side-text-core {
         width: 50%;
         padding: 2rem;
-        margin-top: 15rem;
+        margin-top: 5rem;
 
         h1 {
             text-transform: uppercase;
@@ -765,7 +758,7 @@ nav {
 
     }
 
-    &.active{
+    &.active {
         h1 {
             display: none;
         }
