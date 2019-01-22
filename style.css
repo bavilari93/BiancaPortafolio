@@ -368,7 +368,8 @@ nav {
     #full-stack .projects .project img,
     #react .projects .project img,
     #express .projects .project img {
-      max-width: 80%; }
+      max-width: 100%;
+      margin-top: 3rem; }
     #front-end .projects .project p,
     #full-stack .projects .project p,
     #react .projects .project p,
