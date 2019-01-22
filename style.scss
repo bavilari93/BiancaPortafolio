@@ -361,9 +361,11 @@ nav {
 .project {
     @include flex;
     flex-direction: column;
+    flex-wrap: initial;
     margin: .5rem;
     width: 10rem;
-    height: 15rem;
+    height: auto;
+    padding-bottom:1rem;
     border-radius: 5%;
     -webkit-box-shadow: 0px 14px 40px -16px rgba(133, 130, 133, 0.64);
     -moz-box-shadow: 0px 14px 40px -16px rgba(133, 130, 133, 0.64);
@@ -378,7 +380,8 @@ nav {
         margin: 1rem;
     }
 
-    p {
+    p { 
+        font-size: small;
         width: 70%;
         height: 10%;
         text-align: center;
@@ -387,7 +390,7 @@ nav {
     }
 
     button {
-        margin-top: 2.5rem;
+        margin-top: 3rem;
         border-radius: 6% 15%;
 
         border: {
@@ -500,7 +503,7 @@ nav {
         .project {
             position: relative;
             color: black;
-            height: 25rem;
+            height: auto;
             padding-bottom: 2rem;
             overflow: hidden;
 

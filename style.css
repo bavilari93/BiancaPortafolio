@@ -264,9 +264,11 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: initial;
   margin: .5rem;
   width: 10rem;
-  height: 15rem;
+  height: auto;
+  padding-bottom: 1rem;
   border-radius: 5%;
   -webkit-box-shadow: 0px 14px 40px -16px rgba(133, 130, 133, 0.64);
   -moz-box-shadow: 0px 14px 40px -16px rgba(133, 130, 133, 0.64);
@@ -277,11 +279,12 @@ nav {
   .project h1 {
     margin: 1rem; }
   .project p {
+    font-size: small;
     width: 70%;
     height: 10%;
     text-align: center; }
   .project button {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     border-radius: 6% 15%;
     border-top: solid .04rem #8565c4;
     border-bottom: solid 0.04rem #8565c4;
@@ -356,7 +359,7 @@ nav {
   #express .projects .project {
     position: relative;
     color: black;
-    height: 25rem;
+    height: auto;
     padding-bottom: 2rem;
     overflow: hidden;
     margin: .5rem;
