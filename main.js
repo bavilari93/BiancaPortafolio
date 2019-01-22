@@ -131,6 +131,16 @@ $(() => {
         }))
 
     })
+    const squareSkill = document.querySelectorAll('.square');
+    console.log(squareSkill);
+    squareSkill.forEach((e)=>{
+        e.addEventListener('mouseover',(()=>{
+            e.className+= ' active';
+        }))
+        e.addEventListener('mouseleave',(()=>{
+            e.className='square';
+        }))
+    })
 
    
 

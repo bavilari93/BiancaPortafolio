@@ -308,11 +308,14 @@ nav {
     }
 
     /*modal close*/
-    span {
+    
+    span{
         .close {
             position: fixed;
         }
-    }
+        }
+
+    
 
 }
 
@@ -762,7 +765,7 @@ nav {
 
     }
 
-    &:hover {
+    &.active{
         h1 {
             display: none;
         }
