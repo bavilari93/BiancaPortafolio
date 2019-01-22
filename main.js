@@ -69,6 +69,7 @@ $(() => {
 
         if (skillArray.includes(value)) {
             slideSection.style.width = '100%';
+            $("body").addClass("modal-open");
 
 
         }
@@ -77,6 +78,7 @@ $(() => {
 
 
             slideSection.style.width = "0%";
+            $("body").removeClass("modal-open")
         }
 
     }

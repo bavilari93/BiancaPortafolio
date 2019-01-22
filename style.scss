@@ -4,6 +4,9 @@
     align-items: center;
     flex-wrap: wrap;
 }
+body{.modal-open { 
+  overflow: hidden;
+}}
 
 
 html {
