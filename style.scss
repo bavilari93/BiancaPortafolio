@@ -126,6 +126,7 @@ nav {
 
 /* --------media query for nav bar  ------------------ */
 @media screen and (max-width: 480px) {
+
     nav {
         display: none;
     }
@@ -308,7 +309,8 @@ nav {
     }
 
 
- 
+
+
 
 }
 
@@ -365,7 +367,7 @@ nav {
     margin: .5rem;
     width: 10rem;
     height: auto;
-    padding-bottom:1rem;
+    padding-bottom: 1rem;
     border-radius: 5%;
     -webkit-box-shadow: 0px 14px 40px -16px rgba(133, 130, 133, 0.64);
     -moz-box-shadow: 0px 14px 40px -16px rgba(133, 130, 133, 0.64);
@@ -380,7 +382,7 @@ nav {
         margin: 1rem;
     }
 
-    p { 
+    p {
         font-size: small;
         width: 70%;
         height: 10%;
@@ -508,8 +510,8 @@ nav {
             overflow: hidden;
 
             img {
-                    max-width: 100%;
-                    margin-top: 3rem;
+                max-width: 100%;
+                margin-top: 3rem;
             }
 
             p {
@@ -561,6 +563,20 @@ nav {
 
 
 /* --------heart slider section ------------------ */
+#heart {
+    flex-direction: row;
+}
+
+#brain,
+#hand,
+#front-end,
+#full-stack,
+#react,
+#express {
+    flex-direction: column;
+    
+}
+
 #heart,
 #brain,
 #hand,
@@ -570,7 +586,7 @@ nav {
 #express {
     scroll-behavior: smooth;
     @include flex;
-    flex-direction: column;
+
     position: fixed;
     z-index: 1;
     background: white;
@@ -611,6 +627,7 @@ nav {
     align-items: center;
     justify-content: center;
     position: relative;
+
 
     .slide {
         @include flex;

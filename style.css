@@ -409,6 +409,17 @@ nav {
           filter: invert(0%); }
 
 /* --------heart slider section ------------------ */
+#heart {
+  flex-direction: row; }
+
+#brain,
+#hand,
+#front-end,
+#full-stack,
+#react,
+#express {
+  flex-direction: column; }
+
 #heart,
 #brain,
 #hand,
@@ -421,7 +432,6 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
   position: fixed;
   z-index: 1;
   background: white;
