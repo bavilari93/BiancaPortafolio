@@ -1,0 +1,78 @@
+header {
+    background: $LightBlue;
+    width: 80vw;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: -1;
+        position: fixed;
+        margin-top: 5rem;
+
+    .scroll {
+        @include flexbox;
+        justify-content: cente;
+        align-items: center;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 100%;
+        background: $DarkBlue;
+        height: 100%;
+
+    }
+
+    .hero-text {
+        color: $Pink;
+        width: 50%;
+        height:1px;
+        text-align: center;
+        margin-top: 3rem;
+
+        h3 {
+            font-size: larger;
+
+            .wrap{
+                color: $White;
+            }
+        }
+
+    }
+
+    h1 {
+        color: $White;
+        position: absolute;
+        right: -159px;
+        top: 50%;
+        line-height: 39px;
+        letter-spacing: 5px;
+        font-variant: petite-caps;
+        font-size: -webkit-xxx-large;
+        font-weight: 900;
+
+        .dev {
+            color: $Pink;
+        }
+    }
+}
+
+/*header animation*/
+.slide {
+    animation: come-in .9s ease forwards;
+
+}
+
+/*animation header*/
+
+@keyframes come-in {
+    to {
+        transform: translateX(0);
+    }
+}
+
+#project {
+    height: 40rem;
+}

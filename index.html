@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="float-panel.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="main.js" type="text/javascript"></script>
     <title>Bianca Avila</title>
@@ -12,368 +15,230 @@
 
 <body>
     <div class="container">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#main">home</a>
-                </li>
-                <li>
-                    <a href="#about">about</a>
-                </li>
-                <li>
-                    <a href="#skills">projects</a>
-                </li>
-            </ul>
-            <h1>B</h1>
-        </nav>
-        <!-- mobile nav -->
-        <div id="topNav" class="navbar">
-            <!-- open close icon -->
-            <div class="icon">
+        <div id="mainWrap">
+            <!-- nav -->
+            <nav>
+                <h2>Bianca Avila</h2>
+                <section><button value="about">about</button><a href="#project">work</a><!-- mail mobile-->
+        
+            <a id="mail" href="mailto:biancasar93@gmail.com"><i class="far fa-envelope"></i></a>
+            </nav>
+            <!-- header -->
+            <header>
+                <div class="scroll">
+                    <div class="hero-text">
+                        <h3>I Build Things Online <br>
+                            <span class="txt-rotate" data-period="2000" data-rotate='[ "Design", "Experiences", "Front end", "Back end", "Code" ]'></span>
+                        </h3>
+                    </div>
+                    <h1><span>Web</span><br><span class="dev">Developer</span></h1>
+                </div>
+            </header>
+            <!-- project section -->
+            <div id="project">
+                <h1 class="section-header "><span>WOR</span><br><span class="dev">K</span></h1>
+                <section class="project">
+                    <img class="slideanim" src="./images/main-project/desktop-preview.jpg" alt="">
+                    <section>
+                        <p>Single page responsive website inspired by frontedmentor design.</p>
+                        <section class="side-container">
+                            <a href="https://bavilari93.github.io/fronted-3/"><i class="fas fa-columns" target="_blank"></i></a>
+                            <a href="https://github.com/bavilari93?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                        </section>
+                    </section>
+                </section>
+                <section class="project">
+                    <img class="slideanim" src="./images/project-img/apetit.png" alt="">
+                    <section>
+                        <p>Full-Stack React application featuring full CRUD with user authentication.The technologies for the backend are express.js and node.js. <br><br> The premise is to suggest most voted restaurants nearby to the user's location. </p>
+                        <section class="side-container">
+                            <a href="https://github.com/bavilari93/Final-Project-GA" target="_blank"><i class="fab fa-github"></i></a>
+                        </section>
+                    </section>
+                </section>
+                <section class="project">
+                    <img class="slideanim" src="./images/main-project/desktop-preview2.jpg" alt="">
+                    <section>
+                        <p>Cross browser compatible and mobile friendly website. </p>
+                        <section class="side-container">
+                            <a href="https://bavilari93.github.io/frontedmentor-2/" target="_blank"><i class="fas fa-columns"></i></a>
+                            <a href="https://github.com/bavilari93/frontedmentor-2" target="_blank"><i class="fab fa-github"></i></a>
+                        </section>
+                    </section>
+                </section>
+                <button value="modal">more</button>
+                <!-- skills -->
+                <section id="skills">
+                    <h1 class="skills-header slideanim "><span>SKI</span><br><span class="text-div">LLS.</span></h1>
+                    <p class="sub-header">highly adaptable and driven by learning</p>
+                </section>
+                <div class="skill-content">
+                    <div>
+                        <h2 class="slideanim">development</h2>
+                        <section>
+                            <ul>
+                                <li>Javascript <br><span>es6+</span></li>
+                                <li>NodeJs</li>
+                                <li>PostgreSQL</li>
+                                <li>Version Control <br> <span>git</span></li>
+                                <li>HTML</li>
+                            </ul>
+                            <ul>
+                                <li>Task Runners <br><span>Webpack</span></li>
+                                <li>Command Line</li>
+                                <li>CSS <br><span>sass</span></li>
+                                <li>React.js</li>
+                                <li>ExpressJs</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div>
+                        <h2 class="slideanim">Design</h2>
+                        <section>
+                            <ul>
+                                <li>Adobe Creative Cloud</li>
+                                <li>Sketch</li>
+                                <li>Zeplin</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <!-- contact -->
+                <div id="contact">
+                    <a class="slideanim" href="mailto:biancasar93@gmail.com">
+                        <h1>Let's work together</h1>
+                    </a>
+                    <section>
+                        <a href="https://github.com/bavilari93?tab=repositories"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/avilabianca/"><i class="fab fa-linkedin-in"></i></a><a href="http://biancavila.com/docs/resume_bianca_avila.pdf"><i class="far fa-file"></i></a><a href="mailto:biancasar93@gmail.com"><i class="far fa-envelope"></i></a>
+                    </section>
+                </div>
+            </div>
+            <!-- social icons -->
+            <section class="social">
+                <a href="https://github.com/bavilari93?tab=repositories"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/avilabianca/"><i class="fab fa-linkedin-in"></i></a><a href="http://biancavila.com/docs/resume_bianca_avila.pdf"><i class="far fa-file"></i></a><a href="mailto:biancasar93@gmail.com"><i class="far fa-envelope"></i></a></section>
+        </div>
+        
+     
+        <!-- modal box -->
+        <div id="modal" class="modal">
+            <span class="icon">
                 <div class="bar1"></div>
-                <div class="bar2"></div>
+                <div class="bar2">close</div>
                 <div class="bar3"></div>
-            </div>
-            <!-- add search -->
-            <!-- inner nav that appear  on click -->
-            <div id="innerNav" class="inner-nav">
-                <div class="social-icons">
-                    <div class="a"><a href="https://github.com/bavilari93?tab=repositories" target="_blank"><img src="./img/github-social-media.png" alt=""></a></div>
-                    <div class="a"><a href="https://www.linkedin.com/in/avilabianca/" target="_blank"> <img src="./img/linkedin-social-media.png" alt=""></a></div>
-                    <div class="a"><a href="./docs/resume_bianca_avila.pdf" target="_blank"> <img src="./img/cv-social-media.png" alt=""></a></div>
-                    <div class="a"><a href="mailto:biancasar93@gmail.com"> <img src="./img/email-social-media.png" alt=""></a></div>
-                </div>
-                <div class="side-nav">
-                    <div class="content">
-                        <a href="#about">About</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#front-end">Projects</a>
-                    </div>
-                    <div class="nav-email"><h1>biancasar93@gmail.com</h1>
-                    </div>
-                </div>
+            </span>
+            <span id="scroll-top">
+                &#10148;</span>
+            <div class="modal-content">
+                <h1 class="section-header"><span>WOR</span><br><span class="dev">K</span></h1>
+                <section class="project">
+                    <img class="slideanim" src="./images/project-img/Habitat_Pro.jpg" alt="">
+                    <section>
+                        <p>Designed the user interphase and built home page features on Worpress</p>
+                        <section class="side-container">
+                            <a href="http://www.habitatpro.org/" target="_blank"><i class="fas fa-columns"></i></a>
+                        </section>
+                    </section>
+                </section>
+                <section class="project">
+                    <img src="./images/project-img/nomadic.png" alt="">
+                    <section>
+                        <p>Cross browser compatible and mobile friendly website enhanced by a dinamic layout.
+                            <br>
+                            <br>
+                            Technologies: JavaScript,JQuery HTML-5, CSS</p>
+                        <section class="side-container">
+                            <a href="hhttps://bavilari93.github.io/travel-template/" target="_blank"><i class="fas fa-columns"></i></a>
+                            <a href="https://github.com/bavilari93/travel-template" target="_blank"><i class="fab fa-github"></i></a>
+                        </section>
+                    </section>
+                </section>
+                <section class="project">
+                    <img src="./images/project-img/wanderer.png" alt="wanderer">
+                    <section>
+                        <p>Restful traveling app integrating a flexible CRUD user interphase to provide a relevant information regarding travel destination from API's.
+                            <br>
+                            <br>
+                            Technologies: JavaScript, Postgresql, Node.js and Express.js</p>
+                        <section class="side-container">
+                            <a href="https://gorgeous-voyageurs-44388.herokuapp.com/" target="_blank"><i class="fas fa-columns"></i></a>
+                            <a href="https://git.generalassemb.ly/bavilari93/Project-2"><i class="fab fa-github"></i></a>
+                        </section>
+                    </section>
+                </section>
+                <section class="project">
+                    <img src="./images/project-img/barkbook.png" alt="barkbook.png">
+                    <section>
+                        <p>Ruby on Rails dynamic web app with full CRUD utilizing a friend relationship database with sql allowing the user to see friends profile and comment on their events and saved locations
+                            <br>
+                            <br>
+                            Technologies: Ruby, Ruby on Rails and Sql</p>
+                        <section class="side-container">
+                            <a href="https://git.generalassemb.ly/proj3/rails_app"><i class="fab fa-github"></i></a>
+                        </section>
+                    </section>
+                </section>
+                <section class="project">
+                    <img src="./images/project-img/React-landing-page.jpg" alt="React-landing-page">
+                    <section>
+                        <p>Landing web page featuring an intuitive navigation framework
+                            <br>
+                            <br>
+                            Technologies: React.js</p>
+                        <section class="side-container">
+                            <a href="https://github.com/bavilari93/landingPageReact"><i class="fab fa-github"></i></a>
+                        </section>
+                    </section>
+                </section>
             </div>
         </div>
-        <!-- main content -->
-        <div id="mainWrap" class="wrap">
-            <section id="main">
-                <div class="title">
-                    <h1>Bianca</h1>
-                    <h2>avila</h2>
-                    <h4>full-stack Developer</h4>
-                    <div class="contact">
-                        <div class="icon-social">
-                            <a href="https://github.com/bavilari93?tab=repositories" target=""><img src="./img/github-social-media.png" alt=""></a>
-                            <a href="https://www.linkedin.com/in/avilabianca/" target=""> <img src="./img/linkedin-social-media.png" alt=""></a>
-                            <a href="./docs/resume_bianca_avila.pdf" target=""> <img src="./img/cv-social-media.png" alt=""></a>
-                            <a href="mailto:biancasar93@gmail.com"> <img src="./img/email-social-media.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    <!-- About Modal  -->
+    <div id="about" class="modal">
+        <span class="icon">
+            <div class="bar1"></div>
+            <div class="bar2">close</div>
+            <div class="bar3"></div>
+        </span>
+        <div class="modal-content">
+            <p>
+                < h1>
+            </p>
+            <h1><span>Hola</span><br> I'm <span class="name">Bianca Avila</span></h1>
+            <p>
+                < /h1>
+            </p>
+            <br>
+            <p>
+                < h2>
+            </p>
+            <h2 class="sub-name">Full-Stack Developer</h2>
+            <p>
+                < /h2>
+            </p>
+            <br>
+            <section>
+                <h2>Born and Raised in Tegucigalpa, Honduras</h2>
+                <img src="./images/Honduras.png" alt="">
             </section>
-            <section class="projects">
-                <div class="project front-end">
-                    <img src="./icon/front-end.png">
-                    <h1>Front-End </h1>
-                    <p>Responsive web applications across platforms.</p>
-                    <button class="button-project" value="front-end">More</button>
-                </div>
-                <div class="project full-stack"><img src="./icon/full_stack.png"><h1>Full-Stack</h1>
-                    <p>RESTful web apps integrating flexible CRUD user interphase.</p>
-                    <button class="button-project" value="full-stack">More</button></div>
-                <div class="project react"><img src="./icon/react-native.png">
-                    <h1>React.js</h1>
-                    <p>Seamless user experience Web apps.</p>
-                    <button class="button-project" value="react">More</button></div>
-                <div class="project express"><img src="./icon/node.png">
-                    <h1>Express</h1>
-                    <p>Dynamic Web Apps with basic CRUD utilizing PostgreSQL.</p>
-                    <button class="button-project" value="express">More</button></div>
-                
-            </section>
-            <!-- skills section  -->
-            <section id="skills">
-                <div><img src="./Skills/heart_full.png" alt="heart"><span class="skill"><p>LOVE</p></span></div>
-                <div><img src="./Skills/brain_full.png" alt="brain"><span class="skill"><p>CORE</p></span></div>
-                <div><img src="./Skills/hand_full.png" alt="hand"><span class="skill"><p>SKILLS</p></span></div>
-            </section>
-          
-            <section id="about">
-                <p>안녕! I'm Bianca Avila a fast learner eager to embrace new technologies to inspire change through clean design, DRY code, and intuitive experiences. In pursuit of my passion for creating meaningful and relatable things, I leaped into web development to start a new chapter in my career as a full-stack developer.</p>
-                <h1>ABOUT</h1>
-                <div class="icon-social">
-                    <a href="https://github.com/bavilari93?tab=repositories" target=""><img src="./img/github-social-media.png" alt=""></a>
-                    <a href="https://www.linkedin.com/in/avilabianca/" target=""> <img src="./img/linkedin-social-media.png" alt=""></a>
-                    <a href="./docs/resume_bianca_avila.pdf" target=""> <img src="./img/cv-social-media.png" alt=""></a>
-                    <a href="mailto:biancasar93@gmail.com"> <img src="./img/email-social-media.png" alt=""></a>
-                </div>
-            </section>
-        </div>
-          <!-- modal love, brain , work page -->
-            <section id="heart">
-                <span class="close">&times;</span>
-                <div class="carousel">
-                    <div class="slide"><img src="./Skills/gymnastics.png" alt=""> <h1>I love gymnastics</h1>
-                    </div>
-                    <div class="slide"><img src="./Skills/music.png" alt=""> <h1>I love music</h1>
-                    </div>
-                    <div class="slide"><img src="./Skills/photo.png" alt=""> <h1>I love photography</h1>
-                    </div>
-                    <div class="slide"><img src="./Skills/languages.png" alt=""> <h1>I love learning new languages</h1>
-                    </div>
-                    <div class="slide"><img src="./Skills/learn.png" alt=""> <h1>I love learning</h1>
-                    </div>
-                    <div class="slide"><img src="./Skills/movies.png" alt=""> <h1>I love<br/>binge-watching</h1>
-                    </div>
-                    <div class="slide"><img src="./Skills/travel.png" alt=""> <h1>I love discovering places</h1>
-                    </div>
-                    <div class="slide"><img src="./Skills/family.png" alt=""> <h1>I love my family</h1>
-                    </div>
-                    <div class="slide"><img src="./Skills/technologies.png" alt=""> <h1>I love technology</h1>
-                    </div>
-                </div>
-                <div class="carousel-button">
-                    <button class="prev"> &#10094;</button>
-                    <button class="next">&#10095;</button>
-                </div>
-            </section>
-            <section id="brain">
-                <span class="close">&times;</span>
-                <img src="./Skills/brain_full.png" alt="">
-                <span class="side-text-core">
-                    <h1>core info</h1>
-                    <p>Catracha passionate about new media, learning new technologies and eager to bring designs to life with code. I specialize in a multidisciplinary approach by incorporating my background in marketing and communications into development. 
-                    <br/><br/>
-                    I studied Marketing in Honduras and then mastered in communications in NYC. During this period I started immersing into front-end development which turned out to be the most gratifying little victories and a journey of discoveries.
-                    <br/>  <br/>In pursuit of my passion for creating meaningful and relatable things, I leaped into web development to start a new chapter in my career by enrolling at General Assembly, where I gain the full stack core. 
-                    <br/><br/>Since then I've been participating as a scholar in south korea whilst furthering my skills as a developer through freelance and self-study. </p>
-
-                    </span>
-                                <div class="icon-social">
-                <a href="https://github.com/bavilari93?tab=repositories" target=""><img src="./img/github-social-media.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/avilabianca/" target=""> <img src="./img/linkedin-social-media.png" alt=""></a>
-                <a href="./docs/resume_bianca_avila.pdf" target=""> <img src="./img/cv-social-media.png" alt=""></a>
-                <a href="mailto:biancasar93@gmail.com"> <img src="./img/email-social-media.png" alt=""></a>
+            <h3>I specialize in a multidisciplinary approach by incorporating my background in <span>marketing</span> and <span>communications</span> into bringing designs to life with code.</h3>
+            <div class="edu">
+                <section>
+                    <img src="./images/about/unitec.png" alt="">
+                    <p>Studied <span>Marketing</span></p>
+                </section>
+                <section>
+                    <img src="./images/about/nyit.png" alt="">
+                    <p>Specialized in <span>Communications</span></p>
+                </section>
+                <section>
+                    <img src="./images/about/ga.png" alt="">
+                    <p>Immerse in the most gratifying journey of <br><span>Web Development</span></p>
+                </section>
             </div>
-            </section>
-            <section id="hand">
-                <span class="close">&times;</span>
-                <p>*Hover or click to discover my skills*</p>
-                <div class="square">
-                    <a href="#"><img src="./icon/html5.png" alt="html5"></a>
-                    <a href="#"><img src="./icon/ruby.png" alt="ruby"></a>
-                    <a href="#"><img src="./icon/javascript.png" alt="node.js"></a>
-                    <a href="#"><img src="./icon/react-native.png" alt="react native"></a>
-                    <h1>FRONT END</h1>
-                    
-                </div>
-                <div class="square">
-                    <a href="#"><img src="./icon/psql.png" alt="psql"></a>
-                    <a href="#"><img src="./icon/rails.png" alt="ruby on rails"></a>
-                    <a href="#"><img src="./icon/nodejs.png" alt="node.js"></a>
-                    <h1>BACK END</h1>
-                </div>
-                <div class="square">
-                    <a href="#"><img src="./icon/dreamweaver.png" alt="dreamweaver"></a>
-                    <a href="#"><img src="./icon/illustrator.png" alt="illustrator"></a>
-                    <a href="#"><img src="./icon/Photoshop.png" alt="photoshop"></a>
-                    <a href="#"><img src="./icon/indesign.png" alt="indesign"></a>
-                    <h1>GRAPHIC DESIGN</h1>
-                </div>
-                <div class="square">
-                    <a href="#"><img src="./icon/socialmedia.png" alt="social media management"></a>
-                    <a href="#"><img src="./icon/pr.png" alt="public relations"></a>
-                    <h1>MARKETING</h1>
-                </div>
-            </section>
-        <!-- modal project section -->
-                <!-- front end modal -->
-                <section id="front-end">
-                    <span class="close">&times;</span>
-                    <section class="projects">
-                        <div class="project">
-                            <img src="./project-img/Habitat_Pro.jpg" alt="">
-                            <div class="icon-container">
-                                <a href="http://www.habitatpro.org/" target="_blank_blank" > <img class="icon" src="./img/web.png"></a>
-                            </div>
-                        </div>
-                        <div class="project ">
-                            <img src="./project-img/arquitecture.png" alt="">
-                            <div class="icon-container">
-                                <a href="https://bavilari93.github.io/architecture-form/main.html" target="_blank"> <img class="icon" src="./img/web.png"></a>
-                                <a href="https://github.com/bavilari93/architecture-form" target="_blank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/nomadic.png" alt="">
-                            <div class="icon-container">
-                                <a href="file:///Users/frank/Desktop/Responsiness/travel-template/index.html" target="_blank"> <img class="icon" src="./img/web.png"></a>
-                                <a href="https://github.com/bavilari93/travel-template" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/mail-flex-front-end.png" alt="">
-                            <div class="icon-container">
-                                <a href="https://bavilari93.github.io/mail-flex/index.html" target="_blank"> <img class="icon" src="./img/web.png"></a>
-                                <a href="https://github.com/bavilari93/mail-flex" target="_blank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/passion-front-end.png" alt="">
-                            <div class="icon-container">
-                                <a href="https://bavilari93.github.io/passion-responsive/main.html" target="_blank"> <img class="icon" src="./img/web.png"></a>
-                                <a href="https://github.com/bavilari93/passion-responsive-" target="_blank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/lookbook.png" alt="">
-                            <div class="icon-container">
-                                <a href="https://bavilari93.github.io/lookbook/" target="_blank"> <img class="icon" src="./img/web.png"></a>
-                                <a href="https://github.com/bavilari93/lookbook" target="_blank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/minimal-flex.png" alt="">
-                            <div class="icon-container">
-                                <a href="https://bavilari93.github.io/minima-flex/main.html" target="_blank"> <img class="icon" src="./img/web.png"></a>
-                                <a href="https://github.com/bavilari93/minima-flex" target="_blank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/responsive-template.png" alt="">
-                            <div class="icon-container">
-                                <a href="https://bavilari93.github.io/responsive-web-template/main.html" target="_blank"> <img class="icon" src="./img/web.png"></a>
-                                <a href="https://github.com/bavilari93/responsive-web-template" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <!-- full stack modal -->
-                <section id="full-stack">
-                    <span class="close">&times;</span>
-                    <section class="projects">
-                        <div class="project">
-                            <img src="./project-img/wanderer.png" alt="">
-                            <p>
-                                Restful traveling app that integrates a flexible CRUD user interphase to provide a relevant information regarding travel destination from API's.<br>
-                                <br>
-                                Technologies:
-                                JavaScript, Postgresql, Node.js and Express.js</p>
-                            <div class="icon-container">
-                                <a href="https://gorgeous-voyageurs-44388.herokuapp.com/" target="_blank"> <img class="icon" src="./img/web.png"></a>
-                                <a href="https://git.generalassemb.ly/bavilari93/Project-2" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/barkbook.png" alt="">
-                            <p>
-                                Ruby on Rails dynamic web app with full CRUD utilizing a friend relationship database with sql allowing the user to see friends profile and comment on their events and saved locations
-                                <br>
-                                <br>
-                                Technologies:
-                                Ruby, Ruby on Rails and Sql</p>
-                            <div class="icon-container">
-                                <a href="https://git.generalassemb.ly/proj3/rails_app" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/apetit.png" alt="">
-                            <p>
-                                Full-Stack React.js application featuring CRUD user interface with authentication.The web app premise is to suggest most voted restaurants nearby to the user's location.
-                                <br>
-                                <br>
-                                Technologies:
-                                React.js,node.js and express.js </p>
-                            <div class="icon-container">
-                                <a href="https://github.com/bavilari93/Final-Project-GA" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/emotracker.png" alt="">
-                            <p>
-                                Full-Stack express.js with the premise of tracking daily emotions and allowing the user to see them weekly, monthly through Chart.js.
-                                <br>
-                                <br>
-                                Technologies:
-                                express.js,node.js and sql </p>
-                            <div class="icon-container">
-                                <a href="https://github.com/bavilari93/emoTracker" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <!-- react modal -->
-                <section id="react">
-                    <span class="close">&times;</span>
-                    <section class="projects">
-                        <div class="project">
-                            <img src="./project-img/apetit.png" alt="">
-                            <p>
-                                Full-Stack React.js application featuring CRUD user interface with authentication.The web app premise is to suggest most voted restaurants nearby to the user's location.
-                                <br>
-                                <br>
-                                Technologies:
-                                React.js,node.js and express.js </p>
-                            <div class="icon-container">
-                                <a href="https://github.com/bavilari93/Final-Project-GA" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/React-landing-page.jpg" alt="">
-                            <p>
-                                Landing web page featuring an intuitive navigation framework
-                                <br>
-                                <br>
-                                Technologies:
-                                react.js </p>
-                            <div class="icon-container">
-                                <a href="https://github.com/bavilari93/landingPageReact" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/gif.png" alt="">
-                            <p>
-                                Simple search application retrieving and saving information from GIF api.
-                                <br>
-                                <br>
-                                Technologies:
-                                React.js</p>
-                            <div class="icon-container">
-                                <a href="https://github.com/bavilari93/simpleSearchReact" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <!-- express modal -->
-                <section id="express">
-                    <span class="close">&times;</span>
-                    <section class="projects">
-                        <div class="project">
-                            <img src="./project-img/wanderer.png" alt="">
-                            <p>
-                                Restful traveling app that integrates a flexible CRUD user interphase to provide a relevant information regarding travel destination from API's.<br>
-                                <br>
-                                Technologies:
-                                JavaScript, Postgresql, Node.js and Express.js</p>
-                            <div class="icon-container">
-                                <a href="https://gorgeous-voyageurs-44388.herokuapp.com/" target="_blank"> <img class="icon" src="./img/web.png"></a>
-                                <a href="https://git.generalassemb.ly/bavilari93/Project-2" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="./project-img/emotracker.png" alt="">
-                            <p>
-                                Full-Stack express.js with the premise of tracking daily emotions and allowing the user to see them weekly, and monthly throught a dependency called chart.js to display the emotions that tha user have picked the most.
-                                <br>
-                                <br>
-                                Technologies:
-                                express.js,node.js and sql </p>
-                            <div class="icon-container">
-                                <a href="https://github.com/bavilari93/emoTracker" target="_blankblank"> <img class="icon" src="./img/github-social-media.png"></a>
-                            </div>
-                        </div>
-                    </section>
-                </section>
+            <h3>looking forward to meeting you!</h3>
+            <section class="social">
+                <a href="https://github.com/bavilari93?tab=repositories"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/avilabianca/"><i class="fab fa-linkedin-in"></i></a><a href="http://biancavila.com/docs/resume_bianca_avila.pdf"><i class="far fa-file"></i></a><a href="mailto:biancasar93@gmail.com"><i class="far fa-envelope"></i></a></section>
+        </div>
     </div>
 </body>
 

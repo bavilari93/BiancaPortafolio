@@ -1,0 +1,110 @@
+#skills {
+    @include flexbox;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    height: 15rem;
+    width: 80vw;
+    margin-top: 2rem;
+}
+
+.skills-header {
+    position: absolute;
+    left: 2rem;
+    font-size: -webkit-xxx-large;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: $DarkBlue;
+
+    .text-div {
+        color: $Pink;
+    }
+}
+
+.sub-header {
+    position: absolute;
+    margin-top: 6rem;
+    left: 2rem;
+    width: 15rem;
+    font-variant: all-petite-caps;
+    font-weight: bolder;
+    letter-spacing:1px;
+    font-size: 1.3em;
+}
+
+.skill-content {
+    width: 80vw;
+    @include flexbox;
+    flex-direction: column;
+
+    div {
+        @include flexbox;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: $Pink;
+        font-size:1.2em;
+    }
+
+    section {
+        width: 80%;
+        justify-content: center;
+        @include flexbox;
+        flex-direction: row;
+
+        ul {
+            list-style: none;
+            padding: 2rem;
+            font-weight:400;
+            letter-spacing: 1px;
+            font-size: 1.4em;
+
+            li {
+                padding: 1rem;
+            span{
+                    font-variant-caps: petite-caps;
+                    font-size: medium;
+                        font-weight: 100;
+                        
+
+    color: $Pink;
+            }
+            }
+        }
+    }
+}
+
+/**/
+.slideanim {
+    visibility: hidden;
+    visibility: visible\9;
+    /*For old IE browsers IE6-8 */
+}
+
+.slideanim.slide {
+    visibility: visible;
+    animation: slide 1s;
+}
+
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

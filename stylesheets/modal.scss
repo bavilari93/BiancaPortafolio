@@ -1,0 +1,246 @@
+/*Modal*/
+#modal {
+    -webkit-overflow-scrolling: touch;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    background: $White;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.icon {
+    margin: 1.5rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: -webkit-right;
+    cursor: pointer;
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 40px;
+        height: 2px;
+        background: #000;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .bar2 {
+        background: none;
+        font-variant: all-petite-caps;
+        font-size: large;
+        background: none;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-top: -8px;
+    }
+
+    &:hover {
+
+        .bar1,
+        .bar3 {
+            background: $Pink;
+        }
+
+        .bar1 {
+            -webkit-transform: rotate(-20deg) translate(-9px, 6px);
+            transform: rotate(-40deg) translate(-14px, 8px);
+        }
+
+        .bar2 {
+            opacity: 0;
+        }
+
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(40deg) translate(-9px, -8px);
+        }
+    }
+}
+
+
+#scroll-top {
+    display: none;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 99;
+    background-color: $DarkBlue;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    padding: .2rem;
+
+    &:hover {
+        background-color: $Pink;
+    }
+
+}
+
+.modal-content {
+    width: 90vw;
+    padding: 1rem;
+    @include flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .section-header {
+        margin-top: 3rem;
+    }
+}
+
+/*about */
+
+#about {
+    -webkit-overflow-scrolling: touch;
+    background-color: $DarkBlue;
+    color: $White;
+
+    .modal-content {
+        align-items: start;
+    }
+
+    h1 {
+        font-size: -webkit-xxx-large;
+        font-variant: all-small-caps;
+        font-weight: 900;
+        letter-spacing: 1px;
+        line-height: .7em;
+        margin-bottom: .5rem;
+
+        .name {
+            color: $Pink;
+        }
+
+    }
+
+    h3 {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 4rem;
+        text-align: center;
+        letter-spacing: .07em;
+        line-height: 2em;
+        
+
+        span {
+            color: $Pink;
+        }
+    }
+
+    .sub-name {
+        font-variant: all-petite-caps;
+        letter-spacing: .5em;
+          font-size:1.4em;
+    }
+
+
+    p {
+        color: $Gray;
+        font-variant: all-small-caps;
+    }
+
+
+    section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            width: 30%;
+            letter-spacing: .07em;
+            line-height: 2em;
+            font-size: large;
+
+            span {
+                color: $Pink
+            }
+
+
+        }
+
+
+        img {
+            max-width: 400px;
+        }
+    }
+
+    .edu {
+        display: flex;
+        justify-content: center;
+        align-items: self-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        width: 70%;
+
+        section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                padding: 1rem;
+                color: $White;
+
+                span {
+                    color: $Pink;
+                }
+            }
+
+            img {
+                max-width: 60px;
+            }
+
+        }
+    }
+
+
+
+    .bar1,
+    .bar3 {
+        background-color: $White;
+    }
+
+    .bar2 {
+        color: $Pink;
+    }
+
+    .social {
+
+        margin-top: -1rem;
+        padding-left: 2rem;
+        position: relative;
+        margin: 0 auto;
+
+        a {
+            color: $White;
+
+            &:hover {
+
+                color: $Pink;
+            }
+        }
+    }
+
+}

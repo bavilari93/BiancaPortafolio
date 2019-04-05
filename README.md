@@ -1,7 +1,24 @@
-# bianca avila 
+# Personal portafolio
 
-add 2 projects with explanation and ux 
-when click on projects on the nav bar 
+clean design with more user friendly design.
 
-skill more explanation 
+the wrapper wich contains all the content is displayed with a 90vw/vh.
+
+social icons from https://fontawesome.com/icons/ library
+
+
+tywriter animation for side hero side obtained from codepen
+
+
+**** fix margin-top when clicking on work
+
+**** add a photo of animation on hero
+
+
+-------
+
+nav 
+smooth scroll on modal boxes 
+make scroll button appear only work modal 
+
 

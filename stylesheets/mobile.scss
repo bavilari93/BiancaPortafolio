@@ -1,0 +1,152 @@
+@media only screen and (max-width: 768px) {
+
+    /*general*/
+    /*nav mobile*/
+    nav {
+        h2 {
+            left: 1rem;
+        }
+
+        section {
+
+            padding: 1rem 0rem;
+
+            a {
+                font-size: 1.4em;
+            }
+
+            button {
+                font-size: 1.3em;
+            }
+        }
+
+    }
+
+    /*header mobile */
+    header {
+        width: 100vw
+    }
+
+    .hero-text {
+        margin-top: 0 !important;
+        margin-left: .2rem;
+    }
+
+
+    /*projects*/
+    #project {
+        width: 100vw;
+        padding: 0;
+
+        button {
+            width: 90%;
+        }
+    }
+
+    .project {
+        flex-direction: column;
+        width: 70vw;
+
+        section {
+            width: 100%;
+            margin-left: 0;
+
+            p {
+                font-size: 1.4em;
+                width: 90%;
+            }
+
+        }
+
+        .side-container {
+            i {
+                font-size: 25px !important;
+                padding: 1rem;
+            }
+        }
+    }
+
+    /*modal content mobile*/
+    #modal {
+        .modal-content {
+            width: 100vw;
+            padding: 0rem;
+        }
+    }
+
+    /*skills mobile*/
+    #skills {
+        margin-top: -1rem;
+
+        >* {
+            left: 5rem;
+        }
+    }
+
+    .skill-content {
+        div {
+            flex-direction: column;
+
+            ul {
+                padding: 0rem;
+                margin: .5rem;
+                    text-align: -webkit-center;
+            }
+        }
+    }
+
+    /*modal  about*/
+    #about {
+
+        h3 {
+            width: 90%;
+            font-size: 1.3em;
+        }
+
+        .social {
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        section {
+            flex-direction: column;
+            margin-top: 2rem;
+
+            h2 {
+                font-size: 1.4em;
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
+        .edu {
+            flex-direction: column-reverse;
+
+            section {
+                p {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+
+    /*social icons */
+    .social {
+        display: none;
+    }
+
+
+
+    /*mail contact mobile*/
+    #contact {
+        section {
+            width: 50%;
+        }
+    }
+
+    #mail {
+        display: -webkit-inline-box;
+    }
+}

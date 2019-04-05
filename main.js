@@ -1,150 +1,111 @@
 $(() => {
 
-    // nav bar for mobile 
-    const mainWrap= document.getElementById('mainWrap');
-            const topNav = document.getElementById('topNav');
-            const modalTopNav = document.getElementById('innerNav');
-            $('.icon').click(() => {
-                if (topNav.className === 'navbar') {
+    // overlaying 
 
-                    topNav.className += " responsive";
-                    modalTopNav.style.display = 'flex';
-                    mainWrap.style.display = 'none'
-                    $('.icon').toggleClass("change");
 
-    
-                } else {
+    window.addEventListener('scroll', (() => {
 
-                     mainWrap.style.display = 'flex';
-                    topNav.className = 'navbar';
-                    modalTopNav.style.display = 'none';
-                    $(".icon").removeClass('change');                
-                }
-            })
-            // close when click on a top-nav 
-            modalTopNav.addEventListener('click', function(e){
-                if(topNav.className === 'navbar'){
-                    modalTopNav.style.display = 'block';
-                }else{
-                    topNav.className = 'navbar'
-                   mainWrap.style.display = 'flex'
-                 modalTopNav.style.display = 'none';
-                 $(".icon").removeClass('change');                }
-            })
-            
+        let pageTop = $(this).scrollTop(),
+            pageBottom = pageTop + $(this).height() + 0.2;
+        sectionTags = document.querySelectorAll('.scroll');
 
-    // skill modal activation
-    const skills = document.getElementById('skills').querySelectorAll('img');
-    skills.forEach((e) => {
 
-        let alt = e.getAttribute("alt")
-        
+        if (pageTop > 10) {
+            $('.scroll').addClass('slide');
 
-        // change image skill section
-        e.addEventListener("mouseover", (() => {
-            e.setAttribute('src', `./Skills/${alt}_empty.png`);
-        }))
-        e.addEventListener("mouseleave", (() => {
-            e.setAttribute('src', `./Skills/${alt}_full.png`);
 
-        }))
-        // click slider on span on image on skill section
-        e.nextSibling.addEventListener('click', (() => {
-            let array = ["heart", "brain", "hand"];
-            sliderUp(alt, array)
-        }));
 
-    })
-    //project button 
-   $(".button-project").click(function() {
-        let projectArray = ["front-end", "full-stack", "react", "express"];
-                let value = $(this).val();
-                sliderUp(value, projectArray)
-            })
-    // modal expanding width 100%
-    function sliderUp(value, array) {
-        var skillArray = array;
-        let slideSection = document.getElementById(`${value}`);
-        const span = slideSection.querySelector('span');
-
-        if (skillArray.includes(value)) {
-            slideSection.style.width = '100%';
-             mainWrap.style.display = 'none';
-
+        } else {
+            $('.scroll').removeClass('slide');
 
         }
+
+
+    }))
+    // scroll top on click 
+
+    const element = document.getElementById('scroll-top')
+    element.addEventListener('click',((event)=>{
+        event.preventDefault();
+        $("#modal").animate({ scrollTop: 0 }, "slow");
+        return false;
+    }))
+
+
+
+
+
+    // modal box open 
+    $('button').click(function() {
+        let value = $(this).val();
+        const mainWrap = document.getElementById('mainWrap');
+
+        let slideSection = document.getElementById(`${value}`);
+        const span = slideSection.querySelector('span');
+       
+         element.style.display='-webkit-inline-box';
+        slideSection.style.width = '100%';
+        mainWrap.style.display = 'none';
         // close span
         span.onclick = function() {
 
-
+            element.style.display='none';
             slideSection.style.width = "0%";
             mainWrap.style.display = 'flex';
         }
+    });
+    // code from Simple Typing Carousel A PEN BY KS
+    // typewriter
+    var TxtRotate = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
 
-    }
+    TxtRotate.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
-    // infinite slider 
-    $num = $('.slide').length;
-    $even = $num / 2;
-    $odd = ($num + 1) / 2;
-
-    // choose the first one to display
-    if ($num % 2 == 0) {
-        // selects that child that is in the middle to initiaze the slide 
-        // select the child with active class and aplies prev and nect class to the sorrounded ones 
-        $('.slide:nth-child(' + $even + ')').addClass('active');
-        $('.slide:nth-child(' + $even + ')').prev().addClass('prev');
-        $('.slide:nth-child(' + $even + ')').next().addClass('next');
-    } else {
-        $('.slide:nth-child(' + $odd + ')').addClass('active');
-        $('.slide:nth-child(' + $odd + ')').prev().addClass('prev');
-        $('.slide:nth-child(' + $odd + ')').next().addClass('next');
-    }
-
-
-    // on click change 
-    $('.slide').click(function() {
-        $slide = $('.active').width();
-        // control if it's left or right
-        if ($(this).hasClass('next')) {
-            $('.carousel').stop(false, true).animate({ left: '-=' + $slide });
-        } else if ($(this).hasClass('prev')) {
-            $('.carousel').stop(false, true).animate({ left: '+=' + $slide });
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        $(this).removeClass('prev next');
-        $(this).siblings().removeClass('prev active next');
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-        $(this).addClass('active');
-        $(this).prev().addClass('prev');
-        $(this).next().addClass('next');
-    });
+        var that = this;
+        var delta = 300 - Math.random() * 100;
 
-    const button = document.querySelectorAll('button');
-    button.forEach((e) => {
-        e.addEventListener('click', (() => {
-            if (e.className === "prev") {
-                $('.active').prev().trigger('click');
-            } else if (e.className === "next") {
-                $('.active').next().trigger('click');
-            }
-        }))
+        if (this.isDeleting) { delta /= 2; }
 
-    })
-    const squareSkill = document.querySelectorAll('.square');
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
 
-    squareSkill.forEach((e)=>{
-        e.addEventListener('mouseover',(()=>{
-            e.className+= ' active';
-
-        }))
-        e.addEventListener('mouseleave',(()=>{
-            e.className='square';
-
-        }))
-    })
-
-   
+        setTimeout(function() {
+            that.tick();
+        }, delta);
+    };
 
 
-}) // end of query
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+
+
+}) // end of jquery

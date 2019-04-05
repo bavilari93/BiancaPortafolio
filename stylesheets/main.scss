@@ -1,0 +1,19 @@
+/*---------normilize---------*/
+@import './normalize.scss';
+
+/*---------Utilities---------*/
+@import './variable.scss';
+@import './mixins.scss';
+@import './generale.scss';
+/*---------Styles------------*/
+@import './header.scss/';
+@import './nav.scss';
+@import './menu.scss';
+@import './project.scss';
+@import './modal.scss';
+@import './skills.scss';
+@import './contact.scss';
+
+/*---------Mobile---------*/
+@import './mobile.scss';
+

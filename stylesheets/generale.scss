@@ -1,0 +1,26 @@
+/* Body */
+
+body{
+	font-family: 'Open Sans', sans-serif; 
+
+}
+
+html{
+	box-sizing:box-boder;
+	 scroll-behavior: smooth;
+	    overflowY: hidden;
+}
+
+.container{
+	@include flexbox;
+	flex-direction:column;
+	justify-content:center;
+	width: 100vw; 
+}
+
+
+#mainWrap {
+    @include flexbox;
+    flex-direction: column;}
+
+
