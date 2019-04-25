@@ -41,7 +41,7 @@ html {
   scroll-behavior: smooth;
   overflowY: hidden; }
 
-.container {
+.main-container {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -137,7 +137,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  z-index: 1; }
+  z-index: 99; }
   nav h2 {
     position: absolute;
     left: 3rem;
@@ -190,7 +190,7 @@ nav {
   background: #ffffff;
   width: 80vw;
   height: auto;
-  min-height: 1482px;
+  min-height: 2500px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -431,6 +431,7 @@ nav {
       #about .social a:hover {
         color: #F76C6C; }
 
+/*Skills header */
 #skills {
   display: -webkit-box;
   display: -moz-box;

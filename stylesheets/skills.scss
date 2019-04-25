@@ -1,3 +1,4 @@
+/*Skills header */
 #skills {
     @include flexbox;
     flex-direction: column;
@@ -31,6 +32,7 @@
     letter-spacing:1px;
     font-size: 1.3em;
 }
+
 
 .skill-content {
     width: 80vw;
