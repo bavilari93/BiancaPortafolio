@@ -4,7 +4,7 @@ $(() => {
 
 
     window.addEventListener('scroll', (() => {
-
+console.log('yay')
         let pageTop = $(this).scrollTop(),
             pageBottom = pageTop + $(this).height() + 0.2;
         sectionTags = document.querySelectorAll('.scroll');
@@ -22,9 +22,10 @@ $(() => {
 
 
     }))
-    // scroll top on click 
+    // scroll icon top on click 
 
     const element = document.getElementById('scroll-top')
+    console.log('test')
     element.addEventListener('click',((event)=>{
         event.preventDefault();
         $("#modal").animate({ scrollTop: 0 }, "slow");
@@ -32,20 +33,9 @@ $(() => {
     }))
 
 
-
-    const signUpButton = document.getElementById('signUp');
-    const signInButton = document.getElementById('signIn');
-    const container = document.getElementById('container');
-    signUpButton.addEventListener('click', () => {
-        container.classList.add("right-panel-active");
-    });
-    
-    signInButton.addEventListener('click', () => {
-        container.classList.remove("right-panel-active");
-    });
-
     // modal box open 
     $('button').click(function() {
+        console.log('button')
         let value = $(this).val();
         const mainWrap = document.getElementById('mainWrap');
 
