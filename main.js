@@ -4,7 +4,6 @@ $(() => {
 
 
     window.addEventListener('scroll', (() => {
-console.log('yay')
         let pageTop = $(this).scrollTop(),
             pageBottom = pageTop + $(this).height() + 0.2;
         sectionTags = document.querySelectorAll('.scroll');
@@ -25,7 +24,6 @@ console.log('yay')
     // scroll icon top on click 
 
     const element = document.getElementById('scroll-top')
-    console.log('test')
     element.addEventListener('click',((event)=>{
         event.preventDefault();
         $("#modal").animate({ scrollTop: 0 }, "slow");
